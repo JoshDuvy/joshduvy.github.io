@@ -1,0 +1,434 @@
+/*W3 code*/
+html {
+	scroll-behavior:  smooth;
+}
+
+
+body {
+	/* Duckett (2011) code */
+	width: 100%;
+	margin: 0 auto;
+	/* Google Fonts code */
+	font-family: "Montserrat", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	text-align: center;
+
+		
+
+
+	/*W3 code */
+	font-size: 1.4vw;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	
+	/*W3 code */
+	ul {
+		list-style-type: circle;
+	}
+	
+	img {
+		/* like W3 code */
+		height: auto;
+		max-width: 100%;
+		max-height: 100%;
+		margin: auto;
+		display: flex;
+		margin-left: 5%;
+	}
+	
+	/* Code from w3 */
+	article p {
+		overflow: auto;
+	}
+}
+
+h1 {
+	
+	text-align: center;
+	text-shadow: 2px 2px #cccccc;
+	/* google fonts code */
+	font-family: "Kanit", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.main {
+	font-family: "Kanit", sans-serif;
+	font-size: 1.4vw;
+}
+
+/* Content "section" CSS */
+#footer {
+	text-align: center;
+}
+
+#linkedinFeed {
+	height: 80%;
+}
+
+#introductionHome {
+	h1 {
+		/*W3 code */
+		text-shadow: none;
+	}
+
+	/*W3 code */
+	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("Images/introduction.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	
+	text-align: center;
+	color: #ffffff;
+}
+
+#introductionText {text-align:center;}
+
+#portfolioHome {
+	h1 {
+		/*W3 code */
+		text-shadow: none;
+		text-align: left;
+	}
+
+	/*W3 code */
+	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("Images/introduction.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+	
+	color: #ffffff;
+}
+
+#contactMe {
+	background-color: #68afd4;
+	color: #ffffff;
+	
+	h1 {
+		/*W3 code */
+		text-shadow: 1px 1px #000000;
+	}
+}
+
+#updates {
+	background-color: #556B2F;
+	color: #ffffff;
+	/*W3 code */
+	h1 {
+		text-shadow: 1px 1px #000000;
+	}
+}
+
+#trivia {
+	background-color: #ffad00;
+	color: #ffffff;
+	
+	h1 {
+		/*W3 code */
+		text-shadow: 1px 1px #000000;
+	}
+}
+
+#CurriculumVitae {
+	background-color: #556B2F;
+	color: #ffffff;
+	/*W3 code */
+	h1 {
+		text-shadow: 1px 1px #000000;
+	}
+}
+
+#potraitImage{
+	/* like W3 code */
+	height: 100%;
+	width: auto;
+	display: flex;
+	margin-left: 33%;
+
+}
+
+#portFolio1 {
+	img {
+		/* like W3 code */
+		height: 100%;
+		margin: 1px;
+		display: inline-block;
+		margin-left: 5%;
+		
+	}
+}
+
+
+#portFolio2 {
+	background-color: #ff6666;
+	color: #ffffff;
+	
+	img {
+		/* like W3 code */
+		height: 70%;
+		margin: 1px;
+		display: inline-block;
+		margin-left: 5%;
+		
+	}
+	
+	h1 {
+		text-shadow: 1px 1px #000000;
+	}
+}
+
+#portFolio3 {
+	
+	background-color: #194C7E;
+	color: #ffffff;
+	
+	img {
+		/* like W3 code */
+		height: 70%;
+		margin: 1px;
+		display: inline-block;
+		margin-left: 5%;
+		
+	}
+	
+	h1 {
+		text-shadow: 1px 1px #000000;
+	}
+}
+
+#portfolioText{
+	p {
+		/*w3 code*/
+		vertical-align:text-top;
+		
+		width: 40%;
+		display: inline-block;
+		text-align: left;
+		white-space: normal;
+		margin-right: 4%;
+	}
+}
+
+a:link {
+	text-decoration:none;
+}
+
+/* within page nav "buttons" */
+.pageNav :hover {
+	color: #68afd4;
+}
+
+.pageNav {
+	border-bottom: 10px black;
+	font-family: "Kanit", sans-serif;
+}
+
+.colOne, .colTwo, .colThree {
+	/* Duckett (2011) code */
+	width: 30.3%;
+	float: left;
+	margin: 0.5%;
+	text-align: center;
+	background-color: #ffffff;
+}
+
+.colThree {
+	/* Duckett (2011) code */
+	margin-right: 0%;
+}
+
+/*Article style and column formatting */
+/* code from W3 */
+.artRow {
+	display: flex;
+	height: 100%;
+	width: 100%;
+	background-color: #e4e4e4;
+}
+
+.artCol {
+	position: relative;
+	top: 25%;
+	flex: 50%;
+	height: 40%;
+	overflow: hidden;
+	margin-left: 5%;
+	margin-right: 5%;
+	/* W3 Code */
+}
+
+.artCol p {
+	width: 90%;
+}
+
+/* some code from W3 */
+/* The main navagation bars style */
+
+
+.respNav {
+	background-color: #ffffff;
+	overflow: hidden;
+	font-family: "Kanit", sans-serif;
+}
+
+/* The non: expanded navation bars options */
+.respNav a {
+	float: left;
+	display: block;
+	color: #000000;
+	text-align: center;
+	padding: 5px 5px;
+}
+	
+/* mouse hover over option */	
+.respNav a:hover {
+	background-color: #e2e2e2;
+	color: #ffffff;
+}
+
+/*current page */
+#current {
+	background-color: #68afd4;
+	color: #ffffff;
+}
+	
+/* set the nav to be in the center on non mobile */
+.respNav a.main {
+	margin-left: 25%;
+} 
+
+/* set the nav to be in the right on non mobile */
+.respNav a.first {
+	margin-left: 20%;
+} 	
+	
+/* CSS to hide responsive menu button */	
+.respNav .icon {
+	display: none;
+}
+
+#portfolioBody {
+	position: relative;
+	top: 1%;
+	float: left;
+	height: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	/* W3 Code */
+	overflow: auto;
+	white-space: nowrap;
+	overflow-y: hidden;
+}
+
+/* W3 code */
+.imageGallery {
+	padding: 10px;
+	display: inline-block;
+	height:40%;
+	
+}
+
+div.imageGallery {
+		padding: 1%;
+		}
+
+/* Responsive navigation code*/	
+/* from W3 */	
+@media screen and (max-width: 800px) {
+	.respNav a:not(:first-child) {display: none;}
+	
+	.respNav a.icon {
+		float: right;
+		display: block;
+		font-size: 4vw;
+		
+	}
+	
+	.respNav icon {
+		height: 10%;
+		
+	}
+	
+	.main {
+		font-size: 3vw;
+	}
+	
+	.pageNav {
+	background-color: #ffffff;
+	height: 9%;
+	font-size: 2.9vw;
+	position: fixed;
+	/* w3 code */
+	vertical-align: text-top;
+	z-index: 10;
+	width: 100%;
+	bottom: 0px;
+	padding-top: 1%;
+	}
+	
+	
+	.respNav.responsive .icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	
+	.respNav.responsive a {
+		z-index: 10;
+		float: none;
+		display: block;
+		text-align: left;
+	}
+	
+	/* On mobile keep content vertial, change margin at top, remove centering, increase text size */
+	/* Code from W3 */
+	.artRow {
+	flex-wrap: wrap;
+	display: flex;
+	height: 100%;
+	width: 100%;
+	background-color: #e4e4e4;
+}
+	
+	
+	.respNav a.main {
+	margin-left: 0%;
+	} 
+	
+	.respNav a.first {
+	margin-left: 0%;
+} 	
+	.artCol {top:5%}
+	
+	body {
+		font-size: 2.5vw;
+		text-align: center;
+	}
+	
+	#introductionHome {
+	/*W3 code */
+	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("Images/introduction.jpg");
+	background-repeat: no-repeat;
+	position: relative;
+	text-align: center;
+	background-size: cover;
+	}
+	
+	#introductionText {
+	position: relative;
+	top: 25%;
+	flex: 100%;
+	height: 40%;
+	overflow: hidden;
+	margin-left: 5%;
+	margin-right: 5%;
+	/* W3 Code */
+	text-align: center;
+	}
+	
+	#footer {padding-bottom: 5%;}
+}
+}
+

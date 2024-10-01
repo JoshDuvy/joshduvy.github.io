@@ -1,0 +1,172 @@
+<! DOCTYPE html>
+<html>
+	<head>
+		<meta name"viewport" content="width=device-width, initial-scale=1">
+		<!-- Page Title -->
+		<title>Joshua Duvnjak's Website</title>
+		
+		<!-- Stylesheet import -->
+		<link rel="stylesheet" href="stylesheet.css">
+		
+		<!-- W3 link for icons -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+		<!-- Google Fonts Code -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+	</head>
+	<body>
+	<!-- Page setup  in Duckett (2011) style -->
+		<div id="body">
+			
+			<!-- Main page navigation -->
+			<div id="header">
+				<!-- Navigation W3 -->
+				<div class="respNav" id="respNav2">
+					<a href="index.html" class='main'>Joshua Duvnjak</a>
+					<a href="index.html" class= 'first'>Home</a>
+					<a href="portfolio.html" id='current'>Portfolio</a>
+					<a href="aboutMe.html">About Me</a>
+					<a href="javascript:void(0);" class="icon" onclick="respNavFunc()"><i class="fa fa-bars"></i></a>
+				</div>
+			</div>
+			
+			<!-- The navigation links within a page, section links W3-->
+			<div class="pageNav">
+				<div class="colOne">
+					<i class="fa-solid fa-comment" id="iconNav"></i>
+					<a href="#portFolio1"> AHFE 2024 Publication</a>
+				</div>
+				
+				<div class="colTwo">
+					<i class="fa-solid fa-mobile-screen" id="iconNav"></i>
+					<a href="#portFolio2"> Augmented Reality App</a>
+				</div>
+				
+				<div class="colThree">
+					<i class="fa-solid fa-chart-line" id="iconNav"></i>
+					<a href="#portFolio3"> Sensor-based Hat</a>
+				</div>
+				
+			</div>
+			
+			<!-- Main page content -->
+			<div id="content">
+			
+				<!-- Section One -->
+				<article>
+				
+				<!-- cols code from w3 -->
+					<div class="artRow" id="portfolioHome">
+						<div class="artCol" id ="introductionText" style="text-align: left;"> 
+							<p><h1>Research and Programming Portfolio</h1>
+								</br></br>
+									Joshua Duvnjak
+								</p>
+						</div>
+					</div>
+				</article>
+				
+				<!-- Section Two -->
+				<article>
+
+				<!-- cols code from w3 -->
+					<div class="artRow" id="portFolio1">
+						<div class="artCol" id="portfolioBody"> 
+							<!-- W3 code -->
+							<div id="portfolioText">
+								<h1>AHFE 2024 Conference Paper</h1>
+								<p style="border-left:2px solid black; padding:3px;">The AHFE 2024 conference was the host of the paper: Understanding User Needs of 
+								Personalisation-based Automated Systems with Development 
+								and Application of Novel Ideation Cards.</p><p>This paper consisted of the generation of a novel set of ideation cards and getting 
+								participants involved with using them to codesign their own personalisation systems.</p><p>My role was in the work was the designer of the cards, qualitative data collention/analysis and main writer of the paper. Available at: <a href="https://openaccess.cms-conferences.org/publications/book/978-1-964867-16-8/article/978-1-964867-16-8_1">AFHE Open Access</a></br></br></p>
+							</div>
+							<div><p><p/></div>
+							<div class="imageGallery">
+								<img src="Images/AHFEPresentation1.jpg"/> 
+								<img src="Images/AHFEPresentation2.jpg"/> 
+							</div>
+						</div>
+					</div>	
+				</article>
+				
+				<!-- Section Three -->
+				<article>
+
+				<!-- cols code from w3 -->
+					<div class="artRow" id="portFolio2">
+						<div class="artCol" id="portfolioBody"> 
+							<!-- W3 code -->
+							<div id="portfolioText">
+								<h1>Augmented Reality Smartphone App</h1>
+								<p style="border-left:2px solid white; padding:3px;">This work looked to promote consumer involvement through discussions around waste using AR technology. Suggesting research questions around the effectiveness of AR for providing information on the circular economy, the ability for AR to produce discussion into waste and if the discussion spurred and if the discussion caused any changing consumer actions.</p>
+								<p>An Augmented Reality smartphone technology probe was selected as the method. The technology probe itself was designed through the use of User Persona and Scenario Techniques, with an iterative design approach. It was implemented using the Unity game engine (C++) and Vuforia AR package as a foundation.</p>
+								<p>Interview techniques were utilised as the method at which to evaluate the technology probe, analysed using a thematic analysis. Participants (N=6) were invited to use the technology probe, as they would real application to scan example products.</p>
+							</div>
+							<div><p><p/></div>
+							<div class="imageGallery">
+								<img src="Images/AR1.jpg"/> 
+								<img src="Images/AR2.jpg"/>
+								<img src="Images/AR3.jpg"/> 
+							</div>
+						</div>
+					</div>	
+				</article>
+				
+				<!-- Section Four -->
+				<article>
+
+				<!-- cols code from w3 -->
+					<div class="artRow" id="portFolio3">
+						<div class="artCol" id="portfolioBody"> 
+							<!-- W3 code -->
+							<div id="portfolioText">
+								<h1>Sensor-based Hat</h1>
+								<p style="border-left:2px solid white; padding:3px;">The project is an inactivity monitor and alarm system. It tracks user movement and provides a visual alarm when they have been inactive for too long. It does this by combining different sensor data to determine whether a user is walking and whether they have changed room, 
+								these link to show whether a user is outside.</p><p> The system was tested and developed in multiple ways by collecting real-world data sets.
+								The system is mainly interacted by a person through the sensors in the system. Once the system has been started, the user is constantly interacting with the system. </p><p>In the simplest form, a user’s non-activity is registered
+								within the system and starts/continues a non-activity timer. This timer counts up until a pre-set minute count is reached, upon which it plays an alarm 
+								noting the user that they have been inactive for a period of time.</p>
+								<p>This was completed as part of a COMP4104 module, at the University of Nottingham. I added to the code provided (Python) to "read" the sensor data and have the system respond to real-world events(RaspberryPi/GrovePi).</a></br></br></p>
+							</div>
+							<div><p><p/></div>
+							<div class="imageGallery">
+								<img src="Images/Sensor1.jpg"/> 
+								<img src="Images/Sensor2.jpg"/> 
+								<img src="Images/Sensor3.jpg"/> 
+							</div>
+						</div>
+					</div>	
+				</article>
+			</div>
+		</div>
+		
+		<!-- w3 navbar code -->
+		<script>
+			
+				
+			function respNavFunc() {
+			var i = document.getElementById("respNav2");
+			if (i.className === "respNav") {
+				i.className += " responsive";
+				} else {
+				i.className = "respNav";
+				}
+			}
+
+		
+		</script>
+		
+		<!-- FontAwesome Code -->
+		<script src="https://kit.fontawesome.com/0002e1aff0.js" crossorigin="anonymous"></script>
+		
+		<div id="footer">
+			<p>
+			Website Created by Joshua Duvnjak </br>
+			Coded with material from Duckett (2011) and W3 </br>
+			Please Contact for Latest Information
+			<p>
+	</body>
+</html>

@@ -1,0 +1,145 @@
+<! DOCTYPE html>
+<html>
+	<head>
+		<meta name"viewport" content="width=device-width, initial-scale=1">
+		<!-- Page Title -->
+		<title>Joshua Duvnjak's Website</title>
+		
+		<!-- Stylesheet import -->
+		<link rel="stylesheet" href="stylesheet.css">
+		
+		<!-- W3 link for icons -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+		<!-- Google Fonts Code -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+	</head>
+	<body>
+	<!-- Page setup  in Duckett (2011) style -->
+		<div id="body">
+			
+			<!-- Main page navigation -->
+			<div id="header">
+				<!-- Navigation W3 -->
+				<div class="respNav" id="respNav2">
+					<a href="index.html" class='main'>Joshua Duvnjak</a>
+					<a href="index.html" class= 'first' >Home</a>
+					<a href="portfolio.html">Portfolio</a>
+					<a href="aboutMe.html" id='current'>About Me</a>
+					<a href="javascript:void(0);" class="icon" onclick="respNavFunc()"><i class="fa fa-bars"></i></a>
+				</div>
+			</div>
+			
+			<!-- The navigation links within a page, section links W3-->
+			<div class="pageNav">
+				<div class="colOne">
+					<i class="fa-solid fa-user" id="iconNav"></i>
+					<a href="#introductionAboutMe"> Introduction</a>
+				</div>
+				
+				<div class="colTwo">
+					<i class="fa-solid fa-bicycle" id="iconNav"></i>
+					<a href="#trivia"> Trivia</a>
+				</div>
+				
+				<div class="colThree">
+					<i class="fa-solid fa-scroll" id="iconNav"></i>
+					<a href="#CurriculumVitae"> Curriculum Vitae/CV</a>
+				</div>
+				
+			</div>
+			
+			<!-- Main page content -->
+			<div id="content">
+			
+				<!-- Section One -->
+				<article>
+				
+				<!-- cols code from w3 -->
+					<div class="artRow" id="introductionAboutMe">
+						<div class="artCol">
+							<p>
+							
+								<img src="Images/lancasterGraduation.jpg" id="potraitImage"/> 
+							</p>
+						</div>
+						<div class="artCol" > 
+							<h1>Joshua Duvnjak</h1>
+									<p>A postgraduate student currently studying in the Horizon Centre for Doctoral Training at the University of Nottingham. </br>Aspires to progress further into research in an industry or academic setting.</br> Interested in Human Computer Interaction (HCI) and User Experience for Interfaces.
+									</p>
+						</div>
+					</div>
+				</article>
+				
+				<!-- Section Two -->
+				<article>
+
+				<!-- cols code from w3 -->
+					<div class="artRow" id="trivia">
+						<div class="artCol"> 
+							<h1>Trivia</h1>
+							<p>
+							If you wish to collaborate on upcoming projects, please contact me on Linkedin or email.
+							</p>
+						</div>
+						<div class="artCol">
+							<p>
+							</br>
+								<img src="Images/image.jpg"/> 
+							</p>
+						</div>
+					</div>	
+				</article>
+				
+				<!-- Section Three -->
+				<article>
+				<!-- cols code from w3 -->
+					<div class="artRow" id="CurriculumVitae">
+						<div class="artCol">
+							<p>
+							</br>
+								<img src="Images/cV.jpg"/> 
+							</p>
+						</div>
+						<div class="artCol" > 
+							<h1>Curriculum Vitae</h1>
+								<ul>
+									<li>Please look at my portfolio containing my selected research and programming experience</li>
+									<li>Contact for the latest version of my CV</li>
+								</ul>
+						</div>
+					</div>
+				</article>
+			</div>
+		</div>
+		
+		<!-- w3 navbar code -->
+		<script>
+			
+				
+			function respNavFunc() {
+			var i = document.getElementById("respNav2");
+			if (i.className === "respNav") {
+				i.className += " responsive";
+				} else {
+				i.className = "respNav";
+				}
+			}
+
+		
+		</script>
+		
+		<!-- FontAwesome Code -->
+		<script src="https://kit.fontawesome.com/0002e1aff0.js" crossorigin="anonymous"></script>
+		
+		<div id="footer">
+			<p>
+			Website Created by Joshua Duvnjak </br>
+			Coded with material from Duckett (2011) and W3 </br>
+			Please Contact for Latest Information
+			<p>
+	</body>
+</html>

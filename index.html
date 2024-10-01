@@ -1,0 +1,141 @@
+<! DOCTYPE html>
+<html>
+	<head>
+		<meta name"viewport" content="width=device-width, initial-scale=1">
+		<!-- Page Title -->
+		<title>Joshua Duvnjak's Website</title>
+		
+		<!-- Stylesheet import -->
+		<link rel="stylesheet" href="stylesheet.css">
+		
+		<!-- W3 link for icons -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+		<!-- Google Fonts Code -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+	</head>
+	<body>
+	<!-- Page setup  in Duckett (2011) style -->
+		<div id="body">
+			
+			<!-- Main page navigation -->
+			<div id="header">
+				<!-- Navigation W3 -->
+				<div class="respNav" id="respNav2">
+					<a href="index.html" class='main'>Joshua Duvnjak</a>
+					<a href="index.html" class= 'first' id='current'>Home</a>
+					<a href="portfolio.html">Portfolio</a>
+					<a href="aboutMe.html">About Me</a>
+					<a href="javascript:void(0);" class="icon" onclick="respNavFunc()"><i class="fa fa-bars"></i></a>
+				</div>
+			</div>
+			
+			<!-- The navigation links within a page, section links W3-->
+			<div class="pageNav">
+				<div class="colOne">
+					<i class="fa-solid fa-comment" id="iconNav"></i>
+					<a href="#introductionHome"> Introduction</a>
+				</div>
+				
+				<div class="colTwo">
+					<i class="fa-solid fa-pen" id="iconNav"></i>
+					<a href="#contactMe"> Contact Me</a>
+				</div>
+				
+				<div class="colThree">
+					<i class="fa-regular fa-newspaper" id="iconNav"></i>
+					<a href="#updates"> Updates</a>
+				</div>
+				
+			</div>
+			
+			<!-- Main page content -->
+			<div id="content">
+			
+				<!-- Section One -->
+				<article>
+				
+				<!-- cols code from w3 -->
+					<div class="artRow" id="introductionHome">
+						<div class="artCol" id ="introductionText"> 
+							<p><h1>Joshua Duvnjak's Website!</h1>
+								
+									Please look at my portfolio containing my selected research and programming experience.</br></br>
+									Visit the About Me page for my CV.</br></br>
+									For Updates and Contact Information see below.
+								</p>
+						</div>
+					</div>
+				</article>
+				
+				<!-- Section Two -->
+				<article>
+
+				<!-- cols code from w3 -->
+					<div class="artRow" id="contactMe">
+						<div class="artCol"> 
+							<h1>Contact Me</h1>
+							<p>
+							If you wish to collaborate on upcoming projects, please contact me on Linkedin or email.
+							</p>
+						</div>
+						<div class="artCol">
+							<p>
+							</br>
+								<!-- FontAwesome icon code -->
+								<i class="fa-brands fa-linkedin"></i> <a href="https://uk.linkedin.com/in/joshua-duvnjak-266a33305">   Linkedin</a>
+								</br></br>
+								<!-- FontAwesome icon code -->
+								<i class="fa-solid fa-envelope"></i>   joshduvy@gmail.com
+								</br></br>
+								<!-- FontAwesome icon code -->
+								<i class="fa-solid fa-envelope"></i>  joshua.duvnjak@nottingham.ac.uk
+							</p>
+						</div>
+					</div>	
+				</article>
+				
+				<!-- Section Three -->
+				<article>
+				<!-- cols code from w3 -->
+					<div class="artRow" id="updates">
+						<div class="artCol" id="linkedinFeed"> 
+							<h1>Updates</h1>
+							<!-- socialable kit code -->
+							<div class='sk-ww-linkedin-profile-post' data-embed-id='25454354'></div><script src='https://widgets.sociablekit.com/linkedin-profile-posts/widget.js' async defer></script>
+						</div>
+					</div>	
+				</article>
+			</div>
+		</div>
+		
+		<!-- w3 navbar code -->
+		<script>
+			
+				
+			function respNavFunc() {
+			var i = document.getElementById("respNav2");
+			if (i.className === "respNav") {
+				i.className += " responsive";
+				} else {
+				i.className = "respNav";
+				}
+			}
+
+		
+		</script>
+		
+		<!-- FontAwesome Code -->
+		<script src="https://kit.fontawesome.com/0002e1aff0.js" crossorigin="anonymous"></script>
+		
+		<div id="footer">
+			<p>
+			Website Created by Joshua Duvnjak </br>
+			Coded with material from Duckett (2011) and W3 </br>
+			Please Contact for Latest Information
+			<p>
+	</body>
+</html>
