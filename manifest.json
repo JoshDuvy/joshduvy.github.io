@@ -1,9 +1,10 @@
 {
 	"name": "Joshua Duvnjak",
+	"start_url": "/",
 	"display": "minimal-ui",
 	"icons": [
 		{
-			"src": "icon.png",
+			"src": "Images/icon.png",
 			"sizes": "512x512",
 			"type": "image/png"
 		}
