@@ -352,13 +352,13 @@ div.imageGallery {
 	}
 	
 	.main {
-		font-size: 6vw;
+		font-size: 4.5vw;
 	}
 	
 	.pageNav {
 	background-color: #ffffff;
 	height: 10%;
-	font-size: 6vw;
+	font-size: 4.5vw;
 	position: fixed;
 	/* w3 code */
 	vertical-align: baseline;
