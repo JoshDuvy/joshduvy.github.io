@@ -347,18 +347,18 @@ div.imageGallery {
 	}
 	
 	.respNav icon {
-		height: 10%;
+		height: 15%;
 		
 	}
 	
 	.main {
-		font-size: 4vw;
+		font-size: 6vw;
 	}
 	
 	.pageNav {
 	background-color: #ffffff;
 	height: 10%;
-	font-size: 4vw;
+	font-size: 6vw;
 	position: fixed;
 	/* w3 code */
 	vertical-align: baseline;
