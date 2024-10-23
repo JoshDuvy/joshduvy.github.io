@@ -1,33 +1,45 @@
+/*
+Author: Joshua Duvnjak
+Description: CSS to handle the formatting on each page
+			 The code was developed using resources from various sources
+			 Much of it will be altered to fit the needs of the website
+			 
+*/
+
+
+/*** Code on everypage, default is desktop  ***/
+
 /*W3 code*/
 html {
 	scroll-behavior:  smooth;
 }
 
-
+/* The body encompasses all defaults before much advanced formatting*/
 body {
+	/* set the default width of the page */
 	/* Duckett (2011) code */
 	width: 100%;
 	margin: 0 auto;
-	/* Google Fonts code */
+	/* Code to utalised online fonts, Google Fonts code */
 	font-family: "Montserrat", sans-serif;
 	font-optical-sizing: auto;
 	font-weight: 400;
 	font-style: normal;
 	text-align: center;
 
-		
-
-
 	/*W3 code */
 	font-size: 1.4vw;
+	
 	overflow-y: scroll;
 	overflow-x: hidden;
 	
+	/* Set bullet point style */
 	/*W3 code */
 	ul {
 		list-style-type: circle;
 	}
 	
+	/* Set the default image style */
 	img {
 		/* like W3 code */
 		height: auto;
@@ -38,30 +50,41 @@ body {
 		margin-left: 5%;
 	}
 	
+	/* Articles are the sections of the page */
 	/* Code from w3 */
 	article p {
 		overflow: auto;
 	}
-}
-
-h1 {
+	
+	h1 {
 	
 	text-align: center;
 	text-shadow: 2px 2px #cccccc;
-	/* google fonts code */
+	
+	/* Set a different font for the headings, Google fonts code */
 	font-family: "Kanit", sans-serif;
 	font-weight: 400;
 	font-style: normal;
+	}
+	
+	/*Remove styling for links */
+	a:link {
+	text-decoration:none;
+	}
+
 }
 
-.main {
-	font-family: "Kanit", sans-serif;
-	font-size: 1.4vw;
-}
 
-/* Content "section" CSS */
+
+
+
+
+/** Content "section" CSS, used to customised individual sections of content **/
 #footer {
 	text-align: center;
+	background-color: #262626;
+	color: #ffffff;
+	padding: 0.1%;
 }
 
 #linkedinFeed {
@@ -80,7 +103,7 @@ h1 {
 	background-repeat: no-repeat;
 	position: relative;
 	
-	text-align: center;
+	text-align: left;
 	color: #ffffff;
 }
 
@@ -98,13 +121,10 @@ h1 {
 	background-size: cover;
 	background-repeat: no-repeat;
 	
-	
-	color: #ffffff;
 }
 
 #contactMe {
 	background-color: #68afd4;
-	color: #ffffff;
 	
 	h1 {
 		/*W3 code */
@@ -114,16 +134,15 @@ h1 {
 
 #updates {
 	background-color: #556B2F;
-	color: #ffffff;
+
 	/*W3 code */
 	h1 {
-		text-shadow: 1px 1px #000000;
+		text-shadow: 1px 1px #eeeeee;
 	}
 }
 
 #trivia {
 	background-color: #ffad00;
-	color: #ffffff;
 	
 	h1 {
 		/*W3 code */
@@ -133,7 +152,6 @@ h1 {
 
 #CurriculumVitae {
 	background-color: #556B2F;
-	color: #ffffff;
 	/*W3 code */
 	h1 {
 		text-shadow: 1px 1px #000000;
@@ -141,11 +159,10 @@ h1 {
 }
 
 #potraitImage{
-	/* like W3 code */
-	height: 100%;
-	width: auto;
-	display: flex;
-	margin-left: 25%;
+	position: relative;
+	border-top-left-radius: 50px;
+	border-bottom-left-radius: 50px;
+	right: 5%;
 
 }
 
@@ -211,9 +228,7 @@ h1 {
 	}
 }
 
-a:link {
-	text-decoration:none;
-}
+
 
 /* within page nav "buttons" */
 .pageNav :hover {
@@ -223,15 +238,17 @@ a:link {
 .pageNav {
 	border-bottom: 10px black;
 	font-family: "Kanit", sans-serif;
+	background-color: #f2f2f2;
+
 }
 
 .colOne, .colTwo, .colThree {
 	/* Duckett (2011) code */
 	width: 30.3%;
 	float: left;
-	margin: 0.5%;
+	margin: 0.1%;
 	text-align: center;
-	background-color: #ffffff;
+
 }
 
 .colThree {
@@ -239,36 +256,51 @@ a:link {
 	margin-right: 0%;
 }
 
-/*Article style and column formatting */
-/* code from W3 */
+
+
+/**Article style and column formatting, code from W3 **/
 .artRow {
 	display: flex;
 	height: 100%;
 	width: 100%;
-	background-color: #e4e4e4;
+	background-color: #e8e6e6;
 }
 
 .artCol {
+	top: 5%;
 	position: relative;
-	top: 25%;
 	flex: 50%;
-	height: 40%;
+	height: 100%;
 	overflow: hidden;
 	margin-left: 5%;
 	margin-right: 5%;
-	/* W3 Code */
+
 }
 
 .artCol p {
 	width: 99%;
 }
 
-/* some code from W3 */
-/* The main navagation bars style */
+.artBack {
+	position: relative;
+	top: 20%;
+	left: 5%;
+	width: 90%;
+	height: 60%;
+	display: flex;
+	background-color: #ffffff;
+	border-radius: 50px;
+	
+	/*w3 shadow code */
+	box-shadow: 0px 15px 15px 0px rgba(0,0,0,0.3), 0 1px 1px 0 rgba(0,0,0,0.3); 
+
+}
+
+/** RespNav is the responsive naviagtion bars styling, some code from W3 **/
 
 
 .respNav {
-	background-color: #ffffff;
+	background-color: #262626;
 	overflow: hidden;
 	font-family: "Kanit", sans-serif;
 	border-bottom: 2px solid black;
@@ -280,12 +312,20 @@ a:link {
 	display: block;
 	color: #000000;
 	text-align: center;
-	padding: 5px 5px;
+	padding: 0.2%;
+	padding-left: 1%;
+	padding-right: 1%;
+	margin: 0.4%;
+	/* Some code from W3 **/
+	border-radius: 50px;
+	background: #e6ffff;
+	/*w3 shadow code */
+	box-shadow: 0px 15px 15px 0px rgba(0,0,0,0.3), 0 1px 1px 0 rgba(0,0,0,0.3); 
 }
 	
 /* mouse hover over option */	
 .respNav a:hover {
-	background-color: #e2e2e2;
+	background-color: #3399ff;
 	color: #ffffff;
 }
 
@@ -294,11 +334,8 @@ a:link {
 	background-color: #68afd4;
 	color: #ffffff;
 }
-	
-/* set the nav to be in the center on non mobile */
-.respNav a.main {
-	margin-left: 25%;
-} 
+
+
 
 /* set the nav to be in the right on non mobile */
 .respNav a.first {
@@ -310,6 +347,18 @@ a:link {
 	display: none;
 }
 
+#NavHeader {
+	/* set the nav to be in the center on non mobile */
+	margin-left: 25%;
+	
+	font-family: "Kanit", sans-serif;
+	font-size: 1.4vw;
+	background: none;
+	color: #ffffff;
+	
+}
+
+/** Portfolio specific code **/
 #portfolioBody {
 	position: relative;
 	top: 1%;
@@ -335,8 +384,8 @@ div.imageGallery {
 		padding: 1%;
 		}
 
-/* Responsive navigation code*/	
-/* from W3 */	
+
+/** Responsive navigation code for mobile, some code from W3 **/	
 @media screen and (max-width: 800px) {
 	.respNav a:not(:first-child) {display: none;}
 	
@@ -344,24 +393,26 @@ div.imageGallery {
 		float: right;
 		display: block;
 		font-size: 10vw;
-		
+		border-radius:10px;
+		background: #68afd4;
 	}
 
 	
-	.main {
+	#main {
 		font-size: 7vw;
 	}
 	
 	.pageNav {
 	background-color: #ffffff;
-	height: 9%;
-	font-size: 8vw;
+	height: auto;
+	font-size: 11vw;
 	position: fixed;
 	/* w3 code */
 	z-index: 10;
 	width: 100%;
 	bottom: 0px;
-	padding-top: 0%;
+	opacity: 0.9;
+	padding: 1%;
 	border-top: 2px solid black;
 	}
 	
@@ -372,6 +423,12 @@ div.imageGallery {
 		top: 0;
 	}
 	
+	.respNav a {
+		border-radius: 0px;
+		background: #ffffff;
+		margin:0px;
+	}
+	
 	.respNav.responsive a {
 		z-index: 10;
 		float: none;
@@ -379,13 +436,13 @@ div.imageGallery {
 		text-align: left;
 	}
 	
-	.pageNav a {
-	font-size: 3vw;
-	}
 	
 	
-	.respNav a.main {
-	margin-left: 0%;
+	#NavHeader {
+		margin-left: 0%;
+		margin-left: 0%;
+		font-size: 7vw;
+		border-radius: 50px;
 	} 
 	
 	.respNav a.first {
@@ -393,20 +450,32 @@ div.imageGallery {
 	} 	
 	
 	.artRow {
-	flex-wrap: wrap;
-	display: flex;
-	height: 100%;
-	width: 100%;
-	background-color: #e4e4e4;
+		flex-wrap: wrap;
+		display: flex;
+		height: 100%;
+		width: 100%;
+		background-color: #e4e4e4;
+}
+
+	.artBack {
+		top: 5%;
+		
+		flex-wrap: wrap;
+		display: flex;
+		height: 90%;
+
 }
 	
 	.artCol {
-	top:1%;
-	/*w3 values */
-	height: 50%;
-	overflow: hidden;
-	margin-left: 2%;
-	margin-right: 1%;
+
+		margin: 1%;
+		padding: 0%;
+		left: 0%;
+		top:0%;
+		width: 100%;
+		/*w3 values */
+		height: 50%;
+		overflow: hidden;
 	}
 	
 	
@@ -445,16 +514,29 @@ div.imageGallery {
 	#footer {padding-bottom: 15%;}
 	
 	#potraitImage{
-	/* like W3 code */
-	margin-left: 0%;
+		position: relative;
+		/*object fit from w3 */
+		object-fit: cover;
+		
+		height: 40%;
+		width: 100%;
+		right: 0px;
+		margin: 0px;
+		border-top-left-radius: 50px;
+		border-bottom-left-radius: 0px;
+		border-top-right-radius: 50px;
 	}
 	
 	#top{
-		margin-top: 20%;
-		height: 30%;
+		margin-top: 5%;
+
 	}
 	#linkedinFeed {
 	height: 80%;
+	}
+	
+	#textLink {
+	display: none;
 }
 }
 

@@ -26,7 +26,7 @@
 			<div id="header">
 				<!-- Navigation W3 -->
 				<div class="respNav" id="respNav2">
-					<a href="index.html" class='main'>Joshua Duvnjak</a>
+					<a href="index.html" id='NavHeader'>Joshua Duvnjak</a>
 					<a href="index.html" class= 'first' >Home</a>
 					<a href="portfolio.html">Portfolio</a>
 					<a href="aboutMe.html" id='current'>About Me</a>
@@ -37,18 +37,18 @@
 			<!-- The navigation links within a page, section links W3-->
 			<div class="pageNav">
 				<div class="colOne">
-					<i class="fa-solid fa-user" id="iconNav"></i>
-					<a href="#introductionAboutMe"> Introduction</a>
+					<a href="#introductionAboutMe"><i class="fa-solid fa-user" id="iconNav"></i></a>
+					<a href="#introductionAboutMe" id="textLink"> Introduction</a>
 				</div>
 				
 				<div class="colTwo">
-					<i class="fa-solid fa-bicycle" id="iconNav"></i>
-					<a href="#trivia"> Trivia</a>
+					<a href="#trivia"><i class="fa-solid fa-bicycle" id="iconNav"></i></a>
+					<a href="#trivia" id="textLink"> Trivia</a>
 				</div>
 				
 				<div class="colThree">
-					<i class="fa-solid fa-scroll" id="iconNav"></i>
-					<a href="#CurriculumVitae"> Curriculum Vitae/CV</a>
+					<a href="#CurriculumVitae"><i class="fa-solid fa-scroll" id="iconNav"></i></a>
+					<a href="#CurriculumVitae" id="textLink"> Curriculum Vitae/CV</a>
 				</div>
 				
 			</div>
@@ -61,16 +61,15 @@
 				
 				<!-- cols code from w3 -->
 					<div class="artRow" id="introductionAboutMe">
-						<div class="artCol">
-							<p>
-							
-								<img src="Images/lancasterGraduation.jpg" id="potraitImage"/> 
-							</p>
-						</div>
-						<div class="artCol" > 
-							<h1>Joshua Duvnjak</h1>
-									<p>A postgraduate student who recently submmited their PhD thesis at the University of Nottingham. </br>Aspires to progress further into research in an industry or academic setting.</br> Interested in Human Computer Interaction (HCI) and User Experience for Interfaces.
-									</p>
+						<div class="artBack"> 
+						<!-- image location idea from w3 -->
+						<img src="Images/lancasterGraduation.jpg" id="potraitImage" /> 
+
+							<div class="artCol" > 
+								<h1>Joshua Duvnjak</h1>
+										<p>A postgraduate student who recently submmited their PhD thesis at the University of Nottingham. </br>Aspires to progress further into research in an industry or academic setting.</br> Interested in Human Computer Interaction (HCI) and User Experience for Interfaces.
+										</p>
+							</div>
 						</div>
 					</div>
 				</article>
@@ -80,17 +79,15 @@
 
 				<!-- cols code from w3 -->
 					<div class="artRow" id="trivia">
-						<div class="artCol" id="top"> 
-							<h1>Trivia</h1>
-							<p>
-							I am interesting in Cycling, of which I make use of a Thinkrider X5 smart Turbo Trainer. I am have also painted some Warhammer 40000 miniatures. I regularly watch football and support Swansea City A.F.C.
-							</p>
-						</div>
-						<div class="artCol">
-							<p>
-							</br>
-								<img src="Images/trivia.jpg"/ style="height: 200%; object-fit:cover; margin-left: 25%;" > 
-							</p>
+						<div class="artBack"> 
+							<!-- image location idea from w3 -->
+							<img src="Images/trivia.jpg" id="potraitImage" />
+								<div class="artCol" > 
+									<h1>Trivia</h1>
+									<p>
+									I am interesting in Cycling, of which I make use of a Thinkrider X5 smart Turbo Trainer. I am have also painted some Warhammer 40000 miniatures. I regularly watch football and support Swansea City A.F.C.
+									</p>
+								</div>
 						</div>
 					</div>	
 				</article>
@@ -99,19 +96,15 @@
 				<article>
 				<!-- cols code from w3 -->
 					<div class="artRow" id="CurriculumVitae">
-						
-						<div class="artCol" id="top"> 
-							<h1>Curriculum Vitae</h1>
-								<ul>
-									<li>Please look at my portfolio containing my selected research and programming experience</li>
-									<li>Contact for the latest version of my CV</li>
-								</ul>
-						</div>
-						<div class="artCol">
-							<p>
-							</br>
-								<img src="Images/cV.jpg" style="margin-bottom: 20%"/> 
-							</p>
+						<div class="artBack"> 
+							<!-- image location idea from w3 -->
+							<img src="Images/cV.jpg" id="potraitImage"/>
+								<div class="artCol" > 
+									<h1>Curriculum Vitae</h1>
+									<p>
+									Please look at my portfolio containing my selected research and programming experience</br>Contact for the latest version of my CV
+									</p>
+								</div>
 						</div>
 					</div>
 				</article>

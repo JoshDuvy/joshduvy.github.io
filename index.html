@@ -28,7 +28,7 @@
 			<div id="header">
 				<!-- Navigation W3 -->
 				<div class="respNav" id="respNav2">
-					<a href="index.html" class='main'>Joshua Duvnjak</a>
+					<a href="index.html" id='NavHeader'>Joshua Duvnjak</a>
 					<a href="index.html" class= 'first' id='current'>Home</a>
 					<a href="portfolio.html">Portfolio</a>
 					<a href="aboutMe.html">About Me</a>
@@ -39,18 +39,19 @@
 			<!-- The navigation links within a page, section links W3-->
 			<div class="pageNav">
 				<div class="colOne">
-					<i class="fa-solid fa-comment" id="iconNav"></i>
-					<a href="#introductionHome"> Introduction</a>
+					
+					<a href="#introductionHome"><i class="fa-solid fa-comment" id="iconNav"></i></a>
+					<a href="#introductionHome" id="textLink"> Introduction</a>
 				</div>
 				
 				<div class="colTwo">
-					<i class="fa-solid fa-pen" id="iconNav"></i>
-					<a href="#contactMe"> Contact Me</a>
+					<a href="#contactMe"> <i class="fa-solid fa-pen" id="iconNav"></i></a>
+					<a href="#contactMe" id="textLink"> Contact Me</a>
 				</div>
 				
 				<div class="colThree">
-					<i class="fa-regular fa-newspaper" id="iconNav"></i>
-					<a href="#updates"> Updates</a>
+					<a href="#updates"><i class="fa-regular fa-newspaper" id="iconNav"></i></a>
+					<a href="#updates" id="textLink"> Updates</a>
 				</div>
 				
 			</div>
@@ -63,7 +64,7 @@
 				
 				<!-- cols code from w3 -->
 					<div class="artRow" id="introductionHome">
-						<div class="artCol" id ="introductionText"> 
+						<div class="artCol" id ="introductionText" style="top: 20%;"> 
 							<p><h1>Joshua Duvnjak's Website!</h1>
 								
 									Please look at my portfolio containing my selected research and programming experience.</br></br>
@@ -79,25 +80,28 @@
 
 				<!-- cols code from w3 -->
 					<div class="artRow" id="contactMe">
-						<div class="artCol" id="top"> 
-							<h1>Contact Me</h1>
-							<p>
-							If you wish to collaborate on upcoming projects, please contact me on Linkedin or email.</br></br>
-							I regularly check both email address, but please send another email if time has passed and you have received no response.
-							</p>
-						</div>
-						<div class="artCol">
-							<p>
-							</br>
-								<!-- FontAwesome icon code -->
-								<i class="fa-brands fa-linkedin"></i> <a href="https://uk.linkedin.com/in/joshua-duvnjak-266a33305">   Linkedin</a>
-								</br></br>
-								<!-- FontAwesome icon code -->
-								<i class="fa-solid fa-envelope"></i>   joshduvy@gmail.com
-								</br></br>
-								<!-- FontAwesome icon code -->
-								<i class="fa-solid fa-envelope"></i>  joshua.duvnjak@nottingham.ac.uk
-							</p>
+						<div class="artBack"> 
+							<div class="artCol" id="top"> 
+								<h1>Contact Me</h1>
+								<p>
+								If you wish to collaborate on upcoming projects, please contact me on Linkedin or email.</br></br>
+								I regularly check both email address, but please send another email if time has passed and you have received no response.
+								</p>
+							</div>
+							<div class="artCol">
+								<p>
+								</br>
+								</br>
+									<!-- FontAwesome icon code -->
+									<i class="fa-brands fa-linkedin"></i> <a href="https://uk.linkedin.com/in/joshua-duvnjak-266a33305">   Linkedin</a>
+									</br></br>
+									<!-- FontAwesome icon code -->
+									<i class="fa-solid fa-envelope"></i>   joshduvy@gmail.com
+									</br></br>
+									<!-- FontAwesome icon code -->
+									<i class="fa-solid fa-envelope"></i>  joshua.duvnjak@nottingham.ac.uk
+								</p>
+							</div>
 						</div>
 					</div>	
 				</article>
@@ -106,10 +110,12 @@
 				<article>
 				<!-- cols code from w3 -->
 					<div class="artRow" id="updates">
-						<div class="artCol" id="linkedinFeed"> 
-							<h1>Updates</h1>
-							<!-- socialable kit code -->
-							<div class='sk-ww-linkedin-profile-post' data-embed-id='25454354'></div><script src='https://widgets.sociablekit.com/linkedin-profile-posts/widget.js' async defer></script>
+						<div class="artBack"> 
+							<div class="artCol" id="linkedinFeed"> 
+								<h1>Updates</h1>
+								<!-- socialable kit code -->
+								<div class='sk-ww-linkedin-profile-post' data-embed-id='25454354'></div><script src='https://widgets.sociablekit.com/linkedin-profile-posts/widget.js' async defer></script>
+							</div>
 						</div>
 					</div>	
 				</article>
