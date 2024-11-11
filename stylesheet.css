@@ -3,6 +3,7 @@ Author: Joshua Duvnjak
 Description: CSS to handle the formatting on each page
 			 The code was developed using resources from various sources
 			 Much of it will be altered to fit the needs of the website
+			 Colors chosen using W3 color resources
 			 
 */
 
@@ -128,7 +129,7 @@ body {
 	
 	h1 {
 		/*W3 code */
-		text-shadow: 1px 1px #000000;
+		text-shadow: 1px 1px #eeeeee;
 	}
 }
 
@@ -146,7 +147,7 @@ body {
 	
 	h1 {
 		/*W3 code */
-		text-shadow: 1px 1px #000000;
+		text-shadow: 1px 1px #eeeeee;
 	}
 }
 
@@ -154,7 +155,7 @@ body {
 	background-color: #556B2F;
 	/*W3 code */
 	h1 {
-		text-shadow: 1px 1px #000000;
+		text-shadow: 1px 1px #eeeeee;
 	}
 }
 
@@ -236,15 +237,20 @@ body {
 }
 
 .pageNav {
-	border-bottom: 10px black;
+	border-bottom: 1px black solid;
 	font-family: "Kanit", sans-serif;
-	background-color: #f2f2f2;
+	background-color: #dcdcdc;
+	height:6%;
 
+}
+
+.pageNav a {
+	color: #000000;
 }
 
 .colOne, .colTwo, .colThree {
 	/* Duckett (2011) code */
-	width: 30.3%;
+	width: 20%;
 	float: left;
 	margin: 0.1%;
 	text-align: center;
@@ -255,7 +261,9 @@ body {
 	/* Duckett (2011) code */
 	margin-right: 0%;
 }
-
+.colOne {
+	margin-left: 17%;
+}
 
 
 /**Article style and column formatting, code from W3 **/
@@ -339,7 +347,7 @@ body {
 
 /* set the nav to be in the right on non mobile */
 .respNav a.first {
-	margin-left: 20%;
+	margin-left: 25%;
 } 	
 	
 /* CSS to hide responsive menu button */	
@@ -349,7 +357,7 @@ body {
 
 #NavHeader {
 	/* set the nav to be in the center on non mobile */
-	margin-left: 25%;
+	margin-left: 17%;
 	
 	font-family: "Kanit", sans-serif;
 	font-size: 1.4vw;
@@ -403,7 +411,7 @@ div.imageGallery {
 	}
 	
 	.pageNav {
-	background-color: #ffffff;
+	background-color: #DCDCDC;
 	height: auto;
 	font-size: 11vw;
 	position: fixed;
@@ -413,7 +421,11 @@ div.imageGallery {
 	bottom: 0px;
 	opacity: 0.9;
 	padding: 1%;
-	border-top: 2px solid black;
+	border-top: 1px solid black;
+	}
+	
+	.pageNav a {
+	color: #000000;
 	}
 	
 	
@@ -537,7 +549,12 @@ div.imageGallery {
 	
 	#textLink {
 	display: none;
-}
+	}
+	.colOne, .colTwo, .colThree {
+		/* Duckett (2011) code */
+		width: 30.2%;
+		margin: 0.1%;
+	}
 }
 
 
