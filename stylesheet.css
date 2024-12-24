@@ -75,10 +75,24 @@ body {
 
 }
 
+/** "Alert" box with code from W3 for app install notification **/
 
+.appNotification {
+	background-color: #ffe4c4;
+	color: #000000;
+	font-size: 1vw;
+	padding:0.5%;
+}
 
-
-
+.close {
+	margin-right:1%;
+	color: #000000;
+	float: right;
+	font-size: 1.2vw;
+	cursor: pointer;
+	transition: 0.1s;
+}
+	
 
 /** Content "section" CSS, used to customised individual sections of content **/
 #footer {
