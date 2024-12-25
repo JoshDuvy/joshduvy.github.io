@@ -243,11 +243,31 @@ body {
 	}
 }
 
+.button {
+	color: #000000;
+	text-align: center;
+	padding: 1%;
+	padding-left: 2%;
+	padding-right: 2%;
+	margin: 1%;
+	/* Some code from W3 */
+	border-radius: 50px;
+	background: #68afd4;
+	font-weight: bold;
+	/*w3 shadow code */
+	box-shadow: 0px 15px 15px 0px rgba(0,0,0,0.3), 0 1px 1px 0 rgba(0,0,0,0.3); 
+}
+
+
+.button:hover {
+	/* Hover idea code from W3 */
+	background: #e6ffff;
+}
 
 
 /* within page nav "buttons" */
-.pageNav :hover {
-	color: #68afd4;
+.pageNav a:hover {
+	color: #e6ffff;
 }
 
 .pageNav {
@@ -405,6 +425,7 @@ body {
 div.imageGallery {
 		padding: 1%;
 		}
+		
 
 
 /** Responsive navigation code for mobile, some code from W3 **/	
@@ -416,13 +437,18 @@ div.imageGallery {
 		display: block;
 		font-size: 10vw;
 		border-radius:10px;
-		background: #68afd4;
+		background: #262626;
+		color: #68afd4;
+		box-shadow: none;
 	}
 	
 	.appNotification {
-	font-size: 3vw;
+	font-size: 4vw;
+	}
 
-}
+	.close {
+		font-size: 8vw;
+	}
 
 	
 	#main {
