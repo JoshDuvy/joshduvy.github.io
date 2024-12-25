@@ -418,6 +418,11 @@ div.imageGallery {
 		border-radius:10px;
 		background: #68afd4;
 	}
+	
+	.appNotification {
+	font-size: 3vw;
+
+}
 
 	
 	#main {
@@ -453,6 +458,7 @@ div.imageGallery {
 		border-radius: 0px;
 		background: #ffffff;
 		margin:0px;
+		font-size: 5vw;
 	}
 	
 	.respNav.responsive a {
