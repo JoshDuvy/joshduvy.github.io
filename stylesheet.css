@@ -594,12 +594,17 @@ div.imageGallery {
 	}
 	
 	#textLink {
-	display: none;
+		flex-wrap: wrap;
+		font-size: 3vw;
+		flex: 0 0 10px;
 	}
 	.colOne, .colTwo, .colThree {
 		/* Duckett (2011) code */
-		width: 30.2%;
-		margin: 0.1%;
+		width: 20.2%;
+
+	}
+	.colOne {
+	padding-left: auto;
 	}
 }
 
