@@ -4,7 +4,7 @@ Description: CSS to handle the formatting on each page
 			 The code was developed using resources from various sources
 			 Much of it will be altered to fit the needs of the website
 			 Colors chosen using W3 color resources
-			 
+
 */
 
 
@@ -27,47 +27,48 @@ body {
 	font-weight: 400;
 	font-style: normal;
 	text-align: center;
-
+	background-color: #262626;
 	/*W3 code */
 	font-size: 1.4vw;
-	
+
 	overflow-y: scroll;
 	overflow-x: hidden;
-	
+
 	/* Set bullet point style */
 	/*W3 code */
 	ul {
 		list-style-type: circle;
 	}
-	
+
 	/* Set the default image style */
 	img {
 		/* like W3 code */
 		height: auto;
-		max-width: 100%;
+		max-width: 50%;
 		max-height: 100%;
 		margin: auto;
 		display: flex;
 		margin-left: 5%;
 	}
-	
+
 	/* Articles are the sections of the page */
 	/* Code from w3 */
 	article p {
 		overflow: auto;
 	}
-	
+
 	h1 {
-	
+
 	text-align: center;
 	text-shadow: 2px 2px #cccccc;
-	
+
 	/* Set a different font for the headings, Google fonts code */
 	font-family: "Kanit", sans-serif;
 	font-weight: 400;
+	font-size: 3vw;
 	font-style: normal;
 	}
-	
+
 	/*Remove styling for links */
 	a:link {
 	text-decoration:none;
@@ -92,7 +93,7 @@ body {
 	cursor: pointer;
 	transition: 0.1s;
 }
-	
+
 
 /** Content "section" CSS, used to customised individual sections of content **/
 #footer {
@@ -103,7 +104,7 @@ body {
 }
 
 #linkedinFeed {
-	height: 70%;
+	height: 90%;
 }
 
 #introductionHome {
@@ -117,7 +118,7 @@ body {
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
-	
+
 	text-align: left;
 	color: #ffffff;
 }
@@ -135,12 +136,11 @@ body {
 	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("Images/portfolio.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	
+
 }
 
 #contactMe {
-	background-color: #68afd4;
-	
+
 	h1 {
 		/*W3 code */
 		text-shadow: 1px 1px #eeeeee;
@@ -148,7 +148,6 @@ body {
 }
 
 #updates {
-	background-color: #556B2F;
 
 	/*W3 code */
 	h1 {
@@ -157,8 +156,7 @@ body {
 }
 
 #trivia {
-	background-color: #ffad00;
-	
+
 	h1 {
 		/*W3 code */
 		text-shadow: 1px 1px #eeeeee;
@@ -166,7 +164,6 @@ body {
 }
 
 #CurriculumVitae {
-	background-color: #556B2F;
 	/*W3 code */
 	h1 {
 		text-shadow: 1px 1px #eeeeee;
@@ -181,67 +178,15 @@ body {
 
 }
 
-#portFolio1 {
-	img {
-		/* like W3 code */
-		height: 80%;
-		margin: 1px;
-		display: inline-block;
-		margin-left: 5%;
-		
-	}
+
+#potraitImage2{
+	position: relative;
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+	left: 0%;
+
 }
 
-
-#portFolio2 {
-	background-color: #ff6666;
-	color: #ffffff;
-	
-	img {
-		/* like W3 code */
-		height: 70%;
-		margin: 1px;
-		display: inline-block;
-		margin-left: 5%;
-		
-	}
-	
-	h1 {
-		text-shadow: 1px 1px #000000;
-	}
-}
-
-#portFolio3 {
-	
-	background-color: #194C7E;
-	color: #ffffff;
-	
-	img {
-		/* like W3 code */
-		height: 70%;
-		margin: 1px;
-		display: inline-block;
-		margin-left: 5%;
-		
-	}
-	
-	h1 {
-		text-shadow: 1px 1px #000000;
-	}
-}
-
-#portfolioText{
-	p {
-		/*w3 code*/
-		vertical-align:text-top;
-		
-		width: 50%;
-		display: inline-block;
-		text-align: left;
-		white-space: normal;
-		margin-right: 4%;
-	}
-}
 
 .button {
 	color: #000000;
@@ -255,7 +200,7 @@ body {
 	background: #68afd4;
 	font-weight: bold;
 	/*w3 shadow code */
-	box-shadow: 0px 15px 15px 0px rgba(0,0,0,0.3), 0 1px 1px 0 rgba(0,0,0,0.3); 
+	box-shadow: 0px 15px 15px 0px rgba(0,0,0,0.3), 0 1px 1px 0 rgba(0,0,0,0.3);
 }
 
 
@@ -271,70 +216,76 @@ body {
 }
 
 .pageNav {
-	border-bottom: 1px black solid;
+	background-color: #ffffff;
+	overflow: hidden;
 	font-family: "Kanit", sans-serif;
-	background-color: #dcdcdc;
-	height:6%;
-
+	border-bottom: 2px solid black;
+	/*w3 shadow code */
+	box-shadow: 0px 15px 15px 0px rgba(0,0,0,0.3), 0 1px 1px 0 rgba(0,0,0,0.3);
 }
 
 .pageNav a {
-	color: #000000;
-}
-
-.colOne, .colTwo, .colThree {
-	/* Duckett (2011) code */
-	width: 20%;
 	float: left;
-	margin: 0.1%;
+	display: block;
+	color: #000000;
 	text-align: center;
+	padding: 0.2%;
+	padding-left: 1.5%;
+	padding-right: 1.5%;
+	margin: 0.1%;
+	/* Some code from W3 **/
+	/*w3 shadow code */
 
 }
 
-.colThree {
-	/* Duckett (2011) code */
-	margin-right: 0%;
-}
-.colOne {
-	margin-left: 17%;
+#iconNav {
+	font-size: 2vw;
+	padding-right: 0%;
 }
 
+#PageNavHeader {
+	margin-left: 27%;
+}
 
 /**Article style and column formatting, code from W3 **/
 .artRow {
 	display: flex;
 	height: 100%;
 	width: 100%;
-	background-color: #e8e6e6;
 }
 
 .artCol {
-	top: 5%;
-	position: relative;
 	flex: 50%;
-	height: 100%;
+	height: auto;
+
+	/*w3 code */
+	margin: auto;
+
 	overflow: hidden;
+
 	margin-left: 5%;
 	margin-right: 5%;
+	padding-bottom: 5%;
 
 }
 
 .artCol p {
 	width: 99%;
+
 }
 
 .artBack {
 	position: relative;
-	top: 20%;
-	left: 5%;
-	width: 90%;
-	height: 60%;
+	width: 92%;
+	height: 95%;
 	display: flex;
 	background-color: #ffffff;
 	border-radius: 50px;
-	
+	margin: 3%;
+
+
 	/*w3 shadow code */
-	box-shadow: 0px 15px 15px 0px rgba(0,0,0,0.3), 0 1px 1px 0 rgba(0,0,0,0.3); 
+	box-shadow: 0px 15px 15px 0px rgba(0,0,0,0.3), 0 1px 1px 0 rgba(0,0,0,0.3);
 
 }
 
@@ -362,10 +313,10 @@ body {
 	border-radius: 50px;
 	background: #e6ffff;
 	/*w3 shadow code */
-	box-shadow: 0px 15px 15px 0px rgba(0,0,0,0.3), 0 1px 1px 0 rgba(0,0,0,0.3); 
+	box-shadow: 0px 15px 15px 0px rgba(0,0,0,0.3), 0 1px 1px 0 rgba(0,0,0,0.3);
 }
-	
-/* mouse hover over option */	
+
+/* mouse hover over option */
 .respNav a:hover {
 	background-color: #3399ff;
 	color: #ffffff;
@@ -382,22 +333,25 @@ body {
 /* set the nav to be in the right on non mobile */
 .respNav a.first {
 	margin-left: 25%;
-} 	
-	
-/* CSS to hide responsive menu button */	
+}
+
+/* CSS to hide responsive menu button */
 .respNav .icon {
 	display: none;
 }
 
 #NavHeader {
 	/* set the nav to be in the center on non mobile */
+	margin: 0%;
 	margin-left: 17%;
-	
+
 	font-family: "Kanit", sans-serif;
-	font-size: 1.4vw;
+	font-size: 2vw;
 	background: none;
 	color: #ffffff;
-	
+	border-radius: none;
+	box-shadow: none;
+
 }
 
 /** Portfolio specific code **/
@@ -419,19 +373,19 @@ body {
 	padding: 10px;
 	display: inline-block;
 	height:40%;
-	
+
 }
 
 div.imageGallery {
 		padding: 1%;
 		}
-		
 
 
-/** Responsive navigation code for mobile, some code from W3 **/	
+
+/** Responsive navigation code for mobile, some code from W3 **/
 @media screen and (max-width: 800px) {
 	.respNav a:not(:first-child) {display: none;}
-	
+
 	.respNav a.icon {
 		float: right;
 		display: block;
@@ -441,7 +395,7 @@ div.imageGallery {
 		color: #68afd4;
 		box-shadow: none;
 	}
-	
+
 	.appNotification {
 	font-size: 4vw;
 	}
@@ -450,11 +404,11 @@ div.imageGallery {
 		font-size: 8vw;
 	}
 
-	
+
 	#main {
 		font-size: 7vw;
 	}
-	
+
 	.pageNav {
 	background-color: #DCDCDC;
 	height: auto;
@@ -468,62 +422,69 @@ div.imageGallery {
 	padding: 1%;
 	border-top: 1px solid black;
 	}
-	
+
 	.pageNav a {
 	color: #000000;
 	}
-	
-	
+
+	#PageNavHeader {
+		margin-left: 10%;
+	}
+
+	#iconNav {
+		font-size: 5vw;
+	}
+
 	.respNav.responsive .icon {
 		position: absolute;
 		right: 0;
 		top: 0;
 	}
-	
+
 	.respNav a {
 		border-radius: 0px;
 		background: #ffffff;
 		margin:0px;
 		font-size: 5vw;
 	}
-	
+
 	.respNav.responsive a {
 		z-index: 10;
 		float: none;
 		display: block;
 		text-align: left;
 	}
-	
-	
-	
+
+
+
 	#NavHeader {
 		margin-left: 0%;
 		margin-left: 0%;
 		font-size: 7vw;
 		border-radius: 50px;
-	} 
-	
+	}
+
 	.respNav a.first {
 	margin-left: 0%;
-	} 	
-	
+	}
+
 	.artRow {
 		flex-wrap: wrap;
 		display: flex;
-		height: 100%;
+		height: auto;
 		width: 100%;
 		background-color: #e4e4e4;
 }
 
 	.artBack {
 		top: 5%;
-		
+
 		flex-wrap: wrap;
 		display: flex;
 		height: 90%;
 
 }
-	
+
 	.artCol {
 
 		margin: 1%;
@@ -535,9 +496,9 @@ div.imageGallery {
 		height: 50%;
 		overflow: hidden;
 	}
-	
-	
-	
+
+
+
 	body {
 		font-size: 4vw;
 		text-align: center;
@@ -547,8 +508,12 @@ div.imageGallery {
 		max-width: 100%;
 		max-height: 100%;
 		}
+
+		h1 {
+			font-size: 6vw;
+		}
 	}
-	
+
 	#introductionHome {
 	/*W3 code */
 	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("Images/introduction.jpg");
@@ -557,7 +522,7 @@ div.imageGallery {
 	text-align: center;
 	background-size: cover;
 	}
-	
+
 	#introductionText {
 	position: relative;
 	top: 25%;
@@ -568,14 +533,14 @@ div.imageGallery {
 	/* W3 Code */
 	text-align: center;
 	}
-	
+
 	#footer {padding-bottom: 15%;}
-	
+
 	#potraitImage{
 		position: relative;
 		/*object fit from w3 */
 		object-fit: cover;
-		
+
 		height: 40%;
 		width: 100%;
 		right: 0px;
@@ -584,7 +549,22 @@ div.imageGallery {
 		border-bottom-left-radius: 0px;
 		border-top-right-radius: 50px;
 	}
-	
+
+	#potraitImage2{
+		position: relative;
+		/*object fit from w3 */
+		object-fit: cover;
+
+		height: 40%;
+		width: 100%;
+		right: 0px;
+		bottom: 0px;
+		margin: 0px;
+		border-top-right-radius: 0px;
+		border-bottom-right-radius: 50px;
+		border-bottom-left-radius: 50px;
+	}
+
 	#top{
 		margin-top: 5%;
 
@@ -592,11 +572,15 @@ div.imageGallery {
 	#linkedinFeed {
 	height: 80%;
 	}
-	
+
 	#textLink {
 		flex-wrap: wrap;
 		font-size: 3vw;
 		flex: 0 0 10px;
+	}
+
+	#portFolio3{
+		height=auto;
 	}
 	.colOne, .colTwo, .colThree {
 		/* Duckett (2011) code */
@@ -607,5 +591,3 @@ div.imageGallery {
 	padding-left: auto;
 	}
 }
-
-
