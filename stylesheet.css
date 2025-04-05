@@ -250,6 +250,9 @@ body {
 #PageNavHeader {
 	margin-left: 27%;
 }
+#PageNavHeader2 {
+	margin-left: 20%;
+}
 
 /**Article style and column formatting, code from W3 **/
 .artRow {
@@ -432,11 +435,14 @@ div.imageGallery {
 	}
 
 	#PageNavHeader {
-		margin-left: 10%;
+		margin-left: 0%;
+	}
+	#PageNavHeader2 {
+		margin-left: 0%;
 	}
 
 	#iconNav {
-		font-size: 5vw;
+		font-size: 11vw;
 	}
 
 	.respNav.responsive .icon {
