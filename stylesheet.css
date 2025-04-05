@@ -74,6 +74,10 @@ body {
 	text-decoration:none;
 	}
 
+	ul {
+		text-align: left;
+	}
+
 }
 
 /** "Alert" box with code from W3 for app install notification **/
