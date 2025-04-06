@@ -248,10 +248,10 @@ body {
 }
 
 #PageNavHeader {
-	margin-left: 27%;
+	margin-left: 34%;
 }
 #PageNavHeader2 {
-	margin-left: 20%;
+	margin-left: 22%;
 }
 
 /**Article style and column formatting, code from W3 **/
@@ -419,7 +419,7 @@ div.imageGallery {
 	.pageNav {
 	background-color: #DCDCDC;
 	height: auto;
-	font-size: 11vw;
+	font-size: 4vw;
 	position: fixed;
 	/* w3 code */
 	z-index: 10;
@@ -435,14 +435,15 @@ div.imageGallery {
 	}
 
 	#PageNavHeader {
-		margin-left: 0%;
+		margin-left: 10%;
 	}
 	#PageNavHeader2 {
 		margin-left: 0%;
 	}
 
 	#iconNav {
-		font-size: 11vw;
+		font-size: 8vw;
+		padding-right:3%;
 	}
 
 	.respNav.responsive .icon {
