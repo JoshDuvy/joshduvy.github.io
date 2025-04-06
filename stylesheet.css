@@ -251,7 +251,7 @@ body {
 	margin-left: 34%;
 }
 #PageNavHeader2 {
-	margin-left: 22%;
+	margin-left: 34%;
 }
 
 /**Article style and column formatting, code from W3 **/
@@ -593,12 +593,8 @@ div.imageGallery {
 	#portFolio3{
 		height=auto;
 	}
-	.colOne, .colTwo, .colThree {
-		/* Duckett (2011) code */
-		width: 20.2%;
 
-	}
-	.colOne {
-	padding-left: auto;
+	.button {
+		padding: 2%;
 	}
 }
