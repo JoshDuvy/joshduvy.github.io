@@ -413,7 +413,7 @@ div.imageGallery {
 
 
 	#main {
-		font-size: 7vw;
+		font-size: 8vw;
 	}
 
 	.pageNav {
@@ -425,7 +425,6 @@ div.imageGallery {
 	z-index: 10;
 	width: 100%;
 	bottom: 0px;
-	opacity: 0.9;
 	padding: 1%;
 	border-top: 1px solid black;
 	}
@@ -456,7 +455,7 @@ div.imageGallery {
 		border-radius: 0px;
 		background: #ffffff;
 		margin:0px;
-		font-size: 8vw;
+		font-size: 7vw;
 	}
 
 	.respNav.responsive a {
@@ -484,7 +483,7 @@ div.imageGallery {
 		display: flex;
 		height: auto;
 		width: 100%;
-		background-color: #e4e4e4;
+		
 }
 
 	.artBack {
