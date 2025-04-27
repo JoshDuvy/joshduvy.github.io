@@ -456,7 +456,7 @@ div.imageGallery {
 		border-radius: 0px;
 		background: #ffffff;
 		margin:0px;
-		font-size: 5vw;
+		font-size: 8vw;
 	}
 
 	.respNav.responsive a {
@@ -513,6 +513,7 @@ div.imageGallery {
 	body {
 		font-size: 4vw;
 		text-align: center;
+		background-color: #262626;
 		img {
 		/* like W3 code */
 		height: auto;
