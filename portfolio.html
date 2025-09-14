@@ -1,163 +1,302 @@
-<! DOCTYPE html>
-<html>
+
+<!doctype html>
+<html lang='en' style='font-size:150%;'>
+<!-- Quickstart code from https://getbootstrap.com/docs/5.3/getting-started/introduction/ -->
 	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- Page Title -->
+		<meta charset = 'utf-8'>
+		<meta name = 'viewport' content = 'width=device-width, initial-scale=1'>
 		<title>Joshua Duvnjak's Website</title>
-
-		<!-- Stylesheet import -->
-		<link rel="stylesheet" href="stylesheet.css">
-
-		<!-- W3 link for icons -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<!-- mdn web docs -->
-		<link rel="manifest" href="manifest.json"/>
-		<!-- Google Fonts Code -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+		<link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css' rel="stylesheet" integrity='sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB' crossorigin = 'anonymous'>
 	</head>
+	<style>
+		/* Text Gradient from https://colorffy.com/text-gradient-generator?colors=2370DB-96929C */ 
+		.text-gradient {
+		 color: #FFFFFF; 
+		 background-image: linear-gradient(45deg, #FFFFFF 30%, #2370DB 60%); 
+		 background-clip: text; 
+		 -webkit-background-clip: text; 
+		 -webkit-text-fill-color: transparent; 
+		}  
+		.text-gradient-portfolio {
+		 color: #3C7DC7; 
+		 background-image: linear-gradient(0deg, #3C7DC7 1%, #FEFFF5 70%); 
+		 background-clip: text; 
+		 -webkit-background-clip: text; 
+		 -webkit-text-fill-color: transparent; 
+		}
+	</style>
 	<body>
-	<!-- Page setup  in Duckett (2011) style -->
-		<div id="body">
-
-			<!-- Main page navigation -->
-			<div id="header">
-				<!-- Navigation W3 -->
-				<div class="respNav" id="respNav2">
-					<a href="index.html" id='NavHeader'>Joshua Duvnjak</a>
-					<a href="index.html" class= 'first' >Home</a>
-					<a href="portfolio.html" id='current'>Portfolio</a>
-					<a href="aboutMe.html">About Me</a>
-					<a href="javascript:void(0);" class="icon" onclick="respNavFunc()"><i class="fa fa-bars"></i></a>
+		<nav class='navbar navbar-dark sticky-top navbar-expand-lg bg-dark'>
+			<div class='container-fluid'>
+				<button class='navbar-toggler' type='button' data-bs-toggle='offcanvas' data-bs-target='#navbarOffcanvasLg' aria-controls='navbarOffcanvasLg'  aria-label='Toggle navigation'>
+					<span class='navbar-toggler-icon'></span>
+				</button>
+				<a class='navbar-brand text-gradient' href='#'>Joshua Duvnjak</a>
+				<div class='offcanvas offcanvas-start text-bg-dark' tabindex='-1' id='navbarOffcanvasLg' aria-labelledby='navbarOffcanvasLgLabel'>
+					<div class='offcanvas-header'>
+						<h1 class='offcanvas-title' id='offcanvasNavbarLabel'>Navigation</h1>
+						<button type='button' class='btn-close btn-close-white' data-bs-dismiss='offcanvas' aria-label='Close'></button>
+					</div>
+					<div class='offcanvas-body'>
+						<ul class='navbar-nav'>
+							<li class='nav-item'>
+								<a class='nav-link' href='index.html'>Home</a>
+							</li>
+							<li class='nav-item'>
+								<a class='nav-link active' aria-current='page' href='portfolio.html'>Portfolio</a>
+							</li>
+							<li class='nav-item'>
+								<a class='nav-link' href='aboutme.html'>About Me</a>
+							</li>
+							<li class='nav-item' >
+								<a class='nav-link' href='https://orcid.org/0000-0002-3330-4276'>Publications (ORCID)  
+									<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+									<path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+									<path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+									</svg>
+								</a>
+							</li>
+							<li class='nav-item' >
+								<a class='nav-link' href='https://github.com/JoshDuvy'>Repositories (GitHub) 
+									<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+									<path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+									<path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
-
-			<!-- The navigation links within a page, section links W3-->
-			<div class="pageNav">
-				<a href="#portFolio1" id='PageNavHeader2'><i class="fa-solid fa-comment" id="iconNav"></i></br>Pers. Design Cards</a>
-				<a href="#portFolio2"><i class="fa-solid fa-mobile-screen" id="iconNav"></i></br>AR App</a>
-				<a href="#portFolio3"><i class="fa-solid fa-chart-line" id="iconNav"></i></br>Sensor-based Hat</a>
-			</div>
-
-			<!-- Main page content -->
-			<div id="content">
-
-				<article>
-
-				<!-- cols code from w3 -->
-					<div class="artRow" id="portfolioHome" style="height:100%;">
-						<div class="artCol" id ="introductionText" style="text-align: left; color: #ffffff;">
-							<p><h1>Research and Programming Portfolio</h1>
-									Joshua Duvnjak
-								</br>
-								<a href="https://orcid.org/0000-0002-3330-4276" style='color:#42aaf5;'> </br>View my Publications List on ORCID</a>
-								</p>
+		</nav>
+		<div class='container text-center bg-dark bg-gradient' style='margin-top:5vw;margin-bottom:10vw;padding:5vw;border-radius:1%;'>
+			<h1 class='display-1 text-gradient-portfolio' style='padding-bottom:2vw;'>Research and Programming Portfolio</h1>
+			<h6 class='text-light' style='margin-bottom:2vw;'>Joshua Duvnjak</h6>
+			<a class='btn btn-outline-primary' role='button' href='https://orcid.org/0000-0002-3330-4276' style='margin-bottom:1vw;'>
+				<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+					<path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+					<path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+				</svg> Publications (ORCID)</a>
+			<a class='btn btn-outline-primary' role='button' href='https://github.com/JoshDuvy' style='margin-bottom:1vw;'>
+				<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+					<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+				</svg> GitHub</a>
+		</div>
+		
+		<!-- Portfolio First Stage-->
+		<div class='container text-center' style='margin-top:10vw;padding-bottom:10vw;'>
+			<h1 class='display-1'>Personalisation Design Cards</h1>
+			<div class='row' style='margin-top:10vw;'>
+				<div class='order-2 order-lg-1 col-lg-6'>
+					<!-- Code from https://getbootstrap.com/docs/5.3/components/carousel/ -->
+					<div id="portfolioCarousel1" class="carousel slide carousel-dark">
+					  <div class="carousel-indicators ">
+						<button type="button" data-bs-target="#portfolioCarousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#portfolioCarousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+					  </div>
+					  <div class="carousel-inner" style='border-radius:4%;'>
+						<div class="carousel-item active">
+						  <img src="images/AHFEPresentation2.jpg" class="d-block w-100" alt="/images/AR1.jpg">
 						</div>
-					</div>
-				</article>
-
-				<!-- Section One -->
-				<article>
-
-				<!-- cols code from w3 -->
-					<div class="artRow" id="portFolio1">
-						<div class="artBack">
-						<!-- image location idea from w3 -->
-							<div class="artCol" >
-								<h1>Personalisation Design Cards</h1>
-										<ul>
-											<li>Conference Paper Publication at AHFE 2024</li>
-											<li>Novel Ideation Cards</li>
-											<li>Qualitative Research Skills</li>
-										</ul>
-										<p></br>This paper consisted of the generation of a novel set of ideation cards and getting
-										participants involved with using them to codesign their own personalisation systems.</br></br>
-										The cards were used in workshops and the data (qualitative) was analysed using a a thematic analysis.
-										</br></br>
-										</p>
-							</div>
-							<img src="Images/AHFEPresentation.jpg" alt='Collage image of AHFE presentation' id="potraitImage" />
-
+						<div class="carousel-item">
+						  <img src="images/AHFEPresentation1.jpg" class="d-block w-100" alt="/images/AR1.jpg">
 						</div>
+					  </div>
+					  <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel1" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					  </button>
+					  <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel1" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					  </button>
 					</div>
-				</article>
-
-				<!-- Section Two -->
-				<article>
-
-				<!-- cols code from w3 -->
-					<div class="artRow" id="portFolio2">
-						<div class="artBack">
-								<div class="artCol">
-									<h1>Augmented Reality Smartphone App</h1>
-									<ul>
-										<li>Augmented Reality Mobile Application</li>
-										<li>C# Programming Skills</li>
-										<li>Qualitative Interview Skills</li>
-									</ul>
-									<p>
-									</br>An Augmented Reality smartphone technology probe was selected as the method. </br></br>The technology probe itself was designed through the use of User Persona and Scenario Techniques, with an iterative design approach. </br></br>It was implemented using the Unity (scripted in C#) and Vuforia AR package as a foundation.
-									</br></p>
-								</div>
-								<!-- image location idea from w3 -->
-								<img src="Images/ARApp.jpg" alt='A collage image showing the Augmented Reality application and the visulisations. A thematic analysis is also shown.' id="potraitImage" />
-						</div>
+				</div>
+				<div class='order-1 order-lg-2 col-lg-6'>
+					<div class='row'>
+						<ul style='text-align:left; padding-left:20%;'>
+							<li>Conference Paper Publication at AHFE 2024</li>
+							<li>Novel Ideation Cards</li>
+							<li>Qualitative Research Skills</li>
+						</ul>
 					</div>
-				</article>
-
-				<!-- Section Three -->
-				<article>
-				<!-- cols code from w3 -->
-					<div class="artRow" id="portFolio3">
-						<div class="artBack">
-							<!-- image location idea from w3 -->
-								<div class="artCol" >
-									<h1>Sensor-based Hat</h1>
-									<ul>
-										<li>Built using RaspberryPi/GrovePi with sensors</li>
-										<li>Python Programming Skills</li>
-										<li>Human Computer Interaction Skills</li>
-									</ul>
-									<p></br>
-										The project is an inactivity monitor and alarm system. It tracks user movement and provides a visual alarm when they have been inactive for too long. </br></br>It does this by combining different sensor data to determine whether a user is walking and whether they have changed room,
-										these link to show whether a user is outside.</br></br>The system was tested and developed in multiple ways by collecting real-world data sets.
-										The system is mainly interacted by a person through the sensors in the system.</br></br>
-									</p>
-								</div>
-								<img src="Images/SensorHat.jpg" alt='A collage image showing a baseball cap with a raspberry pi computer (plus additional equiptment) attached. Code is also shown.' id="potraitImage"/>
-
-						</div>
+					<hr>
+					<div class='row'>
+						<p>This paper consisted of the generation of a novel set of ideation cards and getting
+							participants involved with using them to codesign their own personalisation systems.</br></br>
+							The cards were used in workshops and the data (qualitative) was analysed using a a thematic analysis.
+						</p>
 					</div>
-				</article>
+				</div>
 			</div>
 		</div>
+		
+		<!-- Portfolio Second Stage-->
+		<div class='bg-dark' style='margin-left:0;margin-right:0; padding-top:10vw; padding-bottom:10vw;'>
+			<div class='container text-center text-light'>
+				<h1 class='display-1'>Augmented Reality Smartphone App</h1>
+				<div class='row' style='margin-top:10vw;'>
+					<div class='order-2 order-lg-2 col-lg-6'>
+						<!-- Code from https://getbootstrap.com/docs/5.3/components/carousel/ -->
+						<div id="portfolioCarousel2" class="carousel slide carousel-dark">
+						  <div class="carousel-indicators">
+							<button type="button" data-bs-target="#portfolioCarousel2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+							<button type="button" data-bs-target="#portfolioCarousel2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+							<button type="button" data-bs-target="#portfolioCarousel2" data-bs-slide-to="2" aria-label="Slide 3"></button>
 
-		<!-- w3 navbar code -->
-		<script>
+						  </div>
+						  <div class="carousel-inner" style='border-radius:4%;'>
+							<div class="carousel-item active">
+							  <img src="images/AR1.jpg" class="d-block w-100" alt="/images/AR1.jpg">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/AR2.jpg" class="d-block w-100" alt="/images/AR1.jpg">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/AR3.jpg" class="d-block w-100" alt="/images/AR1.jpg">
+							</div>
+						  </div>
+						  <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel2" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						  </button>
+						  <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel2" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						  </button>
+						</div>
+					</div>
+					<div class='order-1 order-lg-1 col-lg-6'>
+						<div class='row'>
+							<ul style='text-align:left; padding-left:20%;'>
+								<li>Augmented Reality Mobile Application</li>
+								<li>C# Programming Skills</li>
+								<li>Qualitative Interview Skills</li>
+							</ul>
+						</div>
+						<hr>
+						<div class='row'>
+							<p>An Augmented Reality smartphone technology probe was selected as the method. 
+							</br></br>The technology probe itself was designed through the use of User Persona and Scenario Techniques, with an iterative design approach. 
+							</br></br>It was implemented using the Unity (scripted in C#) and Vuforia AR package as a foundation.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Portfolio Third Stage-->
+		<div class='container text-center' style='margin-top:10vw; padding-bottom:10vw;'>
+			<h1 class='display-1'>Sensor-based Hat</h1>
+			<div class='row' style='margin-top:10vw;'>
+				<div class='order-2 order-lg-1 col-lg-6'>
+					<!-- Code from https://getbootstrap.com/docs/5.3/components/carousel/ -->
+					<div id="portfolioCarousel3" class="carousel slide carousel-dark">
+					  <div class="carousel-indicators">
+						<button type="button" data-bs-target="#portfolioCarousel3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#portfolioCarousel3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+					  </div>
+					  <div class="carousel-inner" style='border-radius:4%;'>
+						<div class="carousel-item active">
+						  <img src="images/Sensor1.jpg" class="d-block w-100" alt="/images/AR1.jpg">
+						</div>
+						<div class="carousel-item">
+						  <img src="images/Sensor3.jpg" class="d-block w-100" alt="/images/AR1.jpg">
+						</div>
+					  </div>
+					  <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel3" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					  </button>
+					  <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel3" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					  </button>
+					</div>
+				</div>
+				<div class='order-1 order-lg-2 col-lg-6'>
+					<div class='row'>
+						<ul style='text-align:left; padding-left:20%;'>
+							<li>Built using RaspberryPi/GrovePi with sensors</li>
+							<li>Python Programming Skills</li>
+							<li>Human Computer Interaction Skills</li>
+						</ul>
+					</div>
+					<hr>
+					<div class='row'>
+						<p>The project is an inactivity monitor and alarm system. It tracks user movement and provides a visual alarm when they have been inactive for too long. 
+							</br></br>It does this by combining different sensor data to determine whether a user is walking and whether they have changed room, these link to show whether a user is outside.
+							</br></br>The system was tested and developed in multiple ways by collecting real-world data sets.
+							The system is mainly interacted by a person through the sensors in the system.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Portfolio Mini Projects
+		<div class='bg-dark' style='margin-left:0;margin-right:0;'>
+			<div class='container text-center text-light' style='margin-top:10vw;'>
+				<h1 class='display-1'>Mini Projects</h1>
+					<!-- Code from https://getbootstrap.com/docs/5.3/components/carousel/ 
+					<div id="portfolioCarousel4" class="carousel slide" data-bs-theme='dark'>
+					  <div class="carousel-indicators">
+						<button type="button" data-bs-target="#portfolioCarousel4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#portfolioCarousel4" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#portfolioCarousel4" data-bs-slide-to="2" aria-label="Slide 3"></button>
+					  </div>
+					  <!-- Text Shadow https://www.w3schools.com/css/css3_shadows.asp
+					  <div class="carousel-inner" style='border-radius:4%; text-shadow:1px 1px white;'>
+						<div class="carousel-item active">
+						  <img src="images/Sensor1.jpg" class="d-block w-100" alt="/images/AR1.jpg">
+						  <div class="carousel-caption d-none d-md-block">
+							<h6>Racing Game with Destructable Environments</h6>
+							<ul>
+								<li>Unity Game Engine</li>
+								<li>3D modelling</li>
+								<li>C# Programming</li>
+							</ul>
+						  </div>
+						</div>
+						<div class="carousel-item">
+						  <img src="images/Sensor2.jpg" class="d-block w-100" alt="/images/AR1.jpg">
+						  <div class="carousel-caption d-none d-md-block">
+							<h6>Website</h6>
+							<ul>
+								<li>Mobile/Desktop Web Design</li>
+								<li>Bootstrap 5 Frontend Toolkit</li>
+								<li>Progressive Web App</li>
+							</ul>
+						  </div>
+						</div>
+						<div class="carousel-item">
+						  <img src="images/Sensor3.jpg" class="d-block w-100" alt="/images/AR1.jpg">
+						  <div class="carousel-caption d-none d-md-block">
+							<h6>Second slide label</h6>
+						  </div>
+						</div>
+					  </div>
+					  <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel4" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					  </button>
+					  <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel4" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					  </button>
+					</div>
+			</div>
+		</div> -->
+		
 
-
-			function respNavFunc() {
-			var i = document.getElementById("respNav2");
-			if (i.className === "respNav") {
-				i.className += " responsive";
-				} else {
-				i.className = "respNav";
-				}
-			}
-
-
-		</script>
-
-		<!-- FontAwesome Code -->
-		<script src="https://kit.fontawesome.com/0002e1aff0.js" crossorigin="anonymous"></script>
-
-		<div id="footer">
-			<p>
-			Website Created by Joshua Duvnjak </br>
-			Coded with material from Duckett (2011) and W3 </br>
-			Please Contact for Latest Information
-			<p>
+		<div class='bg-secondary-subtle' style='margin:0; padding-bottom:1vw;padding-top:1.3vw;'>
+			<div class='container text-center fw-lighter'>
+				<p> Website Developed by Joshua Duvnjak</br>
+				Using the Boostrap Library
+				</p>
+			</div>
+		</div>
+		<script src = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js' integrity='sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI' crossorigin = 'anonymous'></script>
 	</body>
 </html>
