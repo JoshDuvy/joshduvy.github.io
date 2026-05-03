@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang='en' style='font-size:150%;'>
 <!-- Quickstart code from https://getbootstrap.com/docs/5.3/getting-started/introduction/ -->
@@ -13,53 +12,52 @@
 	<style>
 		/* Text Gradient from https://colorffy.com/text-gradient-generator?colors=2370DB-96929C */ 
 		.text-gradient {
-		 color: #FFFFFF; 
-		 background-image: linear-gradient(45deg, #FFFFFF 30%, #2370DB 60%); 
-		 background-clip: text; 
-		 -webkit-background-clip: text; 
-		 -webkit-text-fill-color: transparent; 
-		}  
-		.text-gradient-portfolio {
-		 color: #3C7DC7; 
-		 background-image: linear-gradient(0deg, #3C7DC7 1%, #FEFFF5 70%); 
-		 background-clip: text; 
-		 -webkit-background-clip: text; 
-		 -webkit-text-fill-color: transparent; 
+		/* Default: sRGB interpolation */
+		--_space: ;
+
+		background-image: radial-gradient(
+		circle var(--_space),
+		#fff 0%,
+		#027af2 46%
+		);
+		background-clip: text;
+		color: transparent;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
 		}
+
 	</style>
-	<body>
-		<nav class='navbar navbar-dark sticky-top navbar-expand-lg bg-dark'>
-			<div class='container-fluid'>
+	<body >
+		<nav class='navbar bg-white sticky-top navbar-expand-lg'>
+			<div class='container-fluid' id='1'>
 				<button class='navbar-toggler' type='button' data-bs-toggle='offcanvas' data-bs-target='#navbarOffcanvasLg' aria-controls='navbarOffcanvasLg'  aria-label='Toggle navigation'>
 					<span class='navbar-toggler-icon'></span>
 				</button>
-				<a class='navbar-brand text-gradient' href='#'>Joshua Duvnjak</a>
-				<div class='offcanvas offcanvas-start text-bg-dark' tabindex='-1' id='navbarOffcanvasLg' aria-labelledby='navbarOffcanvasLgLabel'>
+				<a class='navbar-brand ms-lg-5' href='#'><img src='images/brandImage.png' alt="Joshua Duvnjak" height="40"></a>
+				<div class='offcanvas offcanvas-start mx-auto' tabindex='-1' id='navbarOffcanvasLg' aria-labelledby='navbarOffcanvasLgLabel'>
 					<div class='offcanvas-header'>
 						<h1 class='offcanvas-title' id='offcanvasNavbarLabel'>Navigation</h1>
-						<button type='button' class='btn-close btn-close-white' data-bs-dismiss='offcanvas' aria-label='Close'></button>
+						<button type='button' class='btn-close btn-close-black' data-bs-dismiss='offcanvas' aria-label='Close'></button>
 					</div>
-					<div class='offcanvas-body'>
+					<!-- https://stackoverflow.com/questions/19733447/bootstrap-navbar-with-left-center-or-right-aligned-items-->
+					<div class='offcanvas-body ms-lg-auto me-lg-5'>
 						<ul class='navbar-nav'>
 							<li class='nav-item'>
-								<a class='nav-link' href='index.html'>Home</a>
+								<a class='nav-link ' href='index.html'>Home</a>
 							</li>
 							<li class='nav-item'>
-								<a class='nav-link active' aria-current='page' href='portfolio.html'>Portfolio</a>
-							</li>
-							<li class='nav-item'>
-								<a class='nav-link' href='aboutme.html'>About Me</a>
+								<a class='nav-link active' aria-current='page'  href='portfolio.html'>Portfolio</a>
 							</li>
 							<li class='nav-item' >
-								<a class='nav-link' href='https://orcid.org/0000-0002-3330-4276'>Publications (ORCID)  
+								<a class='nav-link' href='https://scholar.google.com/citations?user=yZNbjOgAAAAJ&hl=en'>Publications (Google Scholar) 
 									<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
 									<path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
 									<path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
 									</svg>
 								</a>
 							</li>
-							<li class='nav-item' >
-								<a class='nav-link' href='https://github.com/JoshDuvy'>Repositories (GitHub) 
+							<li class='nav-item'>
+								<a class='nav-link' href='https://github.com/JoshDuvy'>Repos (GitHub) 
 									<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
 									<path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
 									<path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
@@ -71,226 +69,306 @@
 				</div>
 			</div>
 		</nav>
-		<div class='container text-center bg-dark bg-gradient' style='margin-top:5vw;margin-bottom:10vw;padding:5vw;border-radius:1%;'>
-			<h1 class='display-1 text-gradient-portfolio' style='padding-bottom:2vw;'>Research and Programming Portfolio</h1>
-			<h6 class='text-light' style='margin-bottom:2vw;'>Joshua Duvnjak</h6>
-			<a class='btn btn-outline-primary' role='button' href='https://orcid.org/0000-0002-3330-4276' style='margin-bottom:1vw;'>
-				<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
-					<path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
-					<path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
-				</svg> Publications (ORCID)</a>
-			<a class='btn btn-outline-primary' role='button' href='https://github.com/JoshDuvy' style='margin-bottom:1vw;'>
-				<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-					<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
-				</svg> GitHub</a>
-		</div>
-		
-		<!-- Portfolio First Stage-->
-		<div class='container text-center' style='margin-top:10vw;padding-bottom:10vw;'>
-			<h1 class='display-1'>Personalisation Design Cards</h1>
-			<div class='row' style='margin-top:10vw;'>
-				<div class='order-2 order-lg-1 col-lg-6'>
-					<!-- Code from https://getbootstrap.com/docs/5.3/components/carousel/ -->
-					<div id="portfolioCarousel1" class="carousel slide carousel-dark">
-					  <div class="carousel-indicators ">
-						<button type="button" data-bs-target="#portfolioCarousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-						<button type="button" data-bs-target="#portfolioCarousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
-					  </div>
-					  <div class="carousel-inner" style='border-radius:4%;'>
-						<div class="carousel-item active">
-						  <img src="images/AHFEPresentation2.jpg" class="d-block w-100" alt=''>
-						</div>
-						<div class="carousel-item">
-						  <img src="images/AHFEPresentation1.jpg" class="d-block w-100" alt=''>
-						</div>
-					  </div>
-					  <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel1" data-bs-slide="prev">
-						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-						<span class="visually-hidden">Previous</span>
-					  </button>
-					  <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel1" data-bs-slide="next">
-						<span class="carousel-control-next-icon" aria-hidden="true"></span>
-						<span class="visually-hidden">Next</span>
-					  </button>
-					</div>
-				</div>
-				<div class='order-1 order-lg-2 col-lg-6'>
-					<div class='row'>
-						<ul style='text-align:left; padding-left:20%;'>
-							<li>Conference Paper Publication at AHFE 2024</li>
-							<li>Novel Ideation Cards</li>
-							<li>Qualitative Research Skills</li>
-						</ul>
-					</div>
-					<hr>
-					<div style='text-align:left;' class='row'>
-						<p>This paper consisted of the generation of a novel set of ideation cards and getting
-							participants involved with using them to codesign their own personalisation systems.</br></br>
-							The cards were used in workshops and the data (qualitative) was analysed using a a thematic analysis.
-						</p>
+		<div class="text-center bg-dark bg-gradient ">
+			<div class="container">
+				<div class='row ' >
+					<h1 class='display-1 text-gradient'>Portfolio</h1>
+					<p class="text-light">My portfolio showcases a range of HCI and Human Factors research, alongside my programming expertise.
+					</p>
+					<h6 class='text-light' style='margin-bottom:2vw;'>Joshua Duvnjak</h6>
+					<div class="py-3">
+						<a class='btn btn-primary'  href='#research' role='button' h' style='margin-bottom:1vw;'>Research</a>
+						<a class='btn btn-primary' href='#programming' role='button' h' style='margin-bottom:1vw;'>Programming</a>
+						<a class='btn btn-outline-primary' role='button' href='https://orcid.org/0000-0002-3330-4276' style='margin-bottom:1vw;'>
+							<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+								<path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+								<path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+							</svg> 
+						Publications (ORCID)</a>
+						<a class='btn btn-outline-primary' role='button' href='https://github.com/JoshDuvy' style='margin-bottom:1vw;'>
+							<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+								<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+							</svg>
+						GitHub</a>
 					</div>
 				</div>
 			</div>
 		</div>
-		
-		<!-- Portfolio Second Stage-->
-		<div class='bg-dark' style='margin-left:0;margin-right:0; padding-top:10vw; padding-bottom:10vw;'>
-			<div class='container text-center text-light'>
-				<h1 class='display-1'>Augmented Reality Smartphone App</h1>
-				<div class='row' style='margin-top:10vw;'>
-					<div class='order-2 order-lg-2 col-lg-6'>
-						<!-- Code from https://getbootstrap.com/docs/5.3/components/carousel/ -->
-						<div id="portfolioCarousel2" class="carousel slide carousel-dark">
-						  <div class="carousel-indicators">
-							<button type="button" data-bs-target="#portfolioCarousel2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-							<button type="button" data-bs-target="#portfolioCarousel2" data-bs-slide-to="1" aria-label="Slide 2"></button>
-							<button type="button" data-bs-target="#portfolioCarousel2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			
+		<!-- Portfolio Research Section-->
+		<div class='text-center' id="research" style='padding-top:5vw;'>
+			<div class="container">
+				<div class='row'>
+					<h1 class='display-1' >Research</h1>
+					<p>My research focuses on human behaviour typically with novel computer systems.
+					</p>
 
-						  </div>
-						  <div class="carousel-inner" style='border-radius:4%;'>
-							<div class="carousel-item active">
-							  <img src="images/AR1.jpg" class="d-block w-100" alt=''>
+					<!-- Portfolio First Research Stage-->	
+					<div class='row' style='margin-top:5vw;'>
+						<div class='order-2 order-lg-1 col-lg-6 text-center'>
+							<!-- Code from https://getbootstrap.com/docs/5.3/components/carousel/ -->
+							<div id="portfolioCarousel1" class="carousel slide carousel-dark">
+							<div class="carousel-indicators ">
+								<button type="button" data-bs-target="#portfolioCarousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+								<button type="button" data-bs-target="#portfolioCarousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+								<button type="button" data-bs-target="#portfolioCarousel1" data-bs-slide-to="2" aria-label="Slide 2"></button>
+
 							</div>
-							<div class="carousel-item">
-							  <img src="images/AR2.jpg" class="d-block w-100" alt=''>
+							<div class="carousel-inner" style='border-radius:4%;'>
+								<div class="carousel-item active">
+								<img src="images/PDC.png" class="d-block w-100" alt=''>
+								</div>
+								<div class="carousel-item">
+								<img src="images/AHFEPresentation2.jpg" class="d-block w-100" alt=''>
+								</div>
+								<div class="carousel-item">
+								<img src="images/AHFEPresentation1.jpg" class="d-block w-100" alt=''>
+								</div>
 							</div>
-							<div class="carousel-item">
-							  <img src="images/AR3.jpg" class="d-block w-100" alt=''>
+							<button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel1" data-bs-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Previous</span>
+							</button>
+							<button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel1" data-bs-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Next</span>
+							</button>
 							</div>
-						  </div>
-						  <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel2" data-bs-slide="prev">
-							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-							<span class="visually-hidden">Previous</span>
-						  </button>
-						  <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel2" data-bs-slide="next">
-							<span class="carousel-control-next-icon" aria-hidden="true"></span>
-							<span class="visually-hidden">Next</span>
-						  </button>
+							<a class='btn btn-primary my-2' role='button' href='http://doi.org/10.54941/ahfe1005032' style='margin-bottom:1vw;'>
+							<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+								<path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+								<path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+							</svg> 
+						Conference Paper Link</a>
 						</div>
-					</div>
-					<div class='order-1 order-lg-1 col-lg-6'>
-						<div class='row'>
-							<ul style='text-align:left; padding-left:20%;'>
-								<li>Augmented Reality Mobile Application</li>
-								<li>C# Programming Skills</li>
-								<li>Qualitative Interview Skills</li>
-							</ul>
+						<div class='order-1 order-lg-2 col-lg-6'>
+							<h1 class='display-6'>Personalisation Design Cards</h1>
+							<div style='text-align:left;' class='row'>
+								<p>This study consisted of the generation of a novel set of ideation cards and getting
+									participants involved with using them to codesign their own personalisation systems.</br></br>
+									The cards were used in workshops and the data (qualitative) was analysed using a a thematic analysis.
+								</p>
+							</div>
+							<a class='btn btn-outline-primary' role='button' h' style='margin-bottom:1vw;'>Codesign Worksops</a>
+							<a class='btn btn-outline-primary' role='button' h' style='margin-bottom:1vw;'>Thematic Analysis</a>
 						</div>
-						<hr>
-						<div class='row'>
-							<p style='text-align:left;'>An Augmented Reality smartphone technology probe was selected as the method. 
-							</br></br>The technology probe itself was designed through the use of User Persona and Scenario Techniques, with an iterative design approach. 
-							</br></br>It was implemented using the Unity (scripted in C#) and Vuforia AR package as a foundation.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		<!-- Portfolio Third Stage-->
-		<div class='container text-center' style='margin-top:10vw; padding-bottom:10vw;'>
-			<h1 class='display-1'>Sensor-based Hat</h1>
-			<div class='row' style='margin-top:10vw;'>
-				<div class='order-2 order-lg-1 col-lg-6'>
-					<!-- Code from https://getbootstrap.com/docs/5.3/components/carousel/ -->
-					<div id="portfolioCarousel3" class="carousel slide carousel-dark">
-					  <div class="carousel-indicators">
-						<button type="button" data-bs-target="#portfolioCarousel3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-						<button type="button" data-bs-target="#portfolioCarousel3" data-bs-slide-to="1" aria-label="Slide 2"></button>
-					  </div>
-					  <div class="carousel-inner" style='border-radius:4%;'>
-						<div class="carousel-item active">
-						  <img src="images/Sensor1.jpg" class="d-block w-100" alt=''>
-						</div>
-						<div class="carousel-item">
-						  <img src="images/Sensor3.jpg" class="d-block w-100" alt=''>
-						</div>
-					  </div>
-					  <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel3" data-bs-slide="prev">
-						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-						<span class="visually-hidden">Previous</span>
-					  </button>
-					  <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel3" data-bs-slide="next">
-						<span class="carousel-control-next-icon" aria-hidden="true"></span>
-						<span class="visually-hidden">Next</span>
-					  </button>
-					</div>
-				</div>
-				<div class='order-1 order-lg-2 col-lg-6'>
-					<div class='row'>
-						<ul style='text-align:left; padding-left:20%;'>
-							<li>Built using RaspberryPi/GrovePi with sensors</li>
-							<li>Python Programming Skills</li>
-							<li>Human Computer Interaction Skills</li>
-						</ul>
 					</div>
 					<hr>
-					<div style='text-align:left;' class='row'>
-						<p>The project is an inactivity monitor and alarm system. It tracks user movement and provides a visual alarm when they have been inactive for too long. 
-							</br></br>It does this by combining different sensor data to determine whether a user is walking and whether they have changed room, these link to show whether a user is outside.
-							</br></br>The system was tested and developed in multiple ways by collecting real-world data sets.
-							The system is mainly interacted by a person through the sensors in the system.
-						</p>
+					<!-- Portfolio Second Research Stage-->	
+					<div class='row' style='margin-top:10vw;'>
+						<div class='order-2 order-lg-2 col-lg-6 text-center'>
+							<!-- Code from https://getbootstrap.com/docs/5.3/components/carousel/ -->
+							<div id="portfolioCarousel2" class="carousel slide carousel-dark">
+							<div class="carousel-indicators ">
+								<button type="button" data-bs-target="#portfolioCarousel2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+								<button type="button" data-bs-target="#portfolioCarousel2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+								<button type="button" data-bs-target="#portfolioCarousel2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+							</div>
+							<div class="carousel-inner" style='border-radius:4%;'>
+								<div class="carousel-item active">
+								<img src="images/Stakeholder1.png" class="d-block w-100" alt=''>
+								</div>
+								<div class="carousel-item">
+								<img src="images/Stakeholder2.png" class="d-block w-100" alt=''>
+								</div>
+								<div class="carousel-item">
+								<img src="images/Stakeholder3.png" class="d-block w-100" alt=''>
+								</div>
+							</div>
+							<button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel2" data-bs-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Previous</span>
+							</button>
+							<button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel2" data-bs-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Next</span>
+							</button>
+							</div>
+							<a class='btn btn-primary my-2' role='button' href='https://doi.org/10.1002/hfm.70030' style='margin-bottom:1vw;'>
+							<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+								<path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+								<path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+							</svg> 
+						Journal Paper Link</a>
+						</div>
+						<div class='order-1 order-lg-1 col-lg-6'>
+							<h1 class='display-6'>Stakeholder Questionaire</h1>
+							<div style='text-align:left;' class='row'>
+								<p>This study consisted of an experimental questionnaire that looked to understand how manufacturing stakeholders felt about personalisation.</br></br>
+									The questionnaire had multiple conditions with a mixed-subjects design to test different robotic personalisation system examples.
+								</p>
+							</div>
+							<a class='btn btn-outline-primary' role='button' h' style='margin-bottom:1vw;'>Questionaire</a>
+							<a class='btn btn-outline-primary' role='button' h' style='margin-bottom:1vw;'>Statistics</a>
+							<a class='btn btn-outline-primary' role='button' h' style='margin-bottom:1vw;'>Experimental Design</a>
+
+						</div>
+					</div>
+					<hr>
+					<!-- Portfolio Third Research Stage-->	
+					<div class='row' style='margin-top:10vw;'>
+						<div class='order-2 order-lg-1 col-lg-6 text-center'>
+							<!-- Code from https://getbootstrap.com/docs/5.3/components/carousel/ -->
+							<div id="portfolioCarousel4" class="carousel slide carousel-dark">
+								<div class="carousel-indicators ">
+									<button type="button" data-bs-target="#portfolioCarousel4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+									<button type="button" data-bs-target="#portfolioCarousel4" data-bs-slide-to="1" aria-label="Slide 2"></button>
+									<button type="button" data-bs-target="#portfolioCarousel4" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+								</div>
+							<div class="carousel-inner" style='border-radius:4%;'>
+								<div class="carousel-item active">
+								<img src="images/AR1.png" class="d-block w-100" alt=''>
+								</div>
+								<div class="carousel-item">
+								<img src="images/AR2.png" class="d-block w-100" alt=''>
+								</div>
+								<div class="carousel-item">
+								<img src="images/AR3.png" class="d-block w-100" alt=''>
+								</div>
+							</div>
+							<button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel4" data-bs-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Previous</span>
+							</button>
+							<button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel4" data-bs-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Next</span>
+							</button>
+							</div>
+							<a class='btn btn-primary my-2' role='button' href='https://github.com/JoshDuvy/AugmentedRealityCircularEconomyMobileApp' style='margin-bottom:1vw;'>
+							<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+								<path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+								<path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+							</svg> 
+						GitHub Repo Link</a>
+						</div>
+						<div class='order-1 order-lg-2 col-lg-6'>
+							<h1 class='display-6'>Augmented Reality Smartphone App</h1>
+							<div style='text-align:left;' class='row'>
+								<p>An Augmented Reality smartphone technology probe was selected as the method. 
+									</br></br>The technology probe itself was designed through the use of User Persona and Scenario Techniques, with an iterative design approach. 
+									</br></br>It was implemented using the Unity and Vuforia AR package as a foundation.
+								</p>
+							</div>
+							<a class='btn btn-outline-primary' role='button' h' style='margin-bottom:1vw;'>C# Development</a>
+							<a class='btn btn-outline-primary' role='button' h' style='margin-bottom:1vw;'>Mobile App Development</a>
+							<a class='btn btn-outline-primary' role='button' h' style='margin-bottom:1vw;'>User Evaluation</a>
+							<a class='btn btn-outline-primary' role='button' h' style='margin-bottom:1vw;'>User Personas</a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		
-		<!-- Portfolio Mini Projects
-		<div class='bg-dark' style='margin-left:0;margin-right:0;'>
-			<div class='container text-center text-light' style='margin-top:10vw;'>
-				<h1 class='display-1'>Mini Projects</h1>
-					<!-- Code from https://getbootstrap.com/docs/5.3/components/carousel/ 
-					<div id="portfolioCarousel4" class="carousel slide" data-bs-theme='dark'>
-					  <div class="carousel-indicators">
-						<button type="button" data-bs-target="#portfolioCarousel4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-						<button type="button" data-bs-target="#portfolioCarousel4" data-bs-slide-to="1" aria-label="Slide 2"></button>
-						<button type="button" data-bs-target="#portfolioCarousel4" data-bs-slide-to="2" aria-label="Slide 3"></button>
-					  </div>
-					  <!-- Text Shadow https://www.w3schools.com/css/css3_shadows.asp
-					  <div class="carousel-inner" style='border-radius:4%; text-shadow:1px 1px white;'>
-						<div class="carousel-item active">
-						  <img src="images/Sensor1.jpg" class="d-block w-100" alt="/images/AR1.jpg">
-						  <div class="carousel-caption d-none d-md-block">
-							<h6>Racing Game with Destructable Environments</h6>
-							<ul>
-								<li>Unity Game Engine</li>
-								<li>3D modelling</li>
-								<li>C# Programming</li>
-							</ul>
-						  </div>
+		<!-- Portfolio Programming Section-->
+		<div class='text-center bg-dark text-light' id="programming" style='padding-top:5vw;'>
+			<div class="container">
+				<div class='row'>
+					<h1 class='display-1' >Programming</h1>
+					<p>I have experience is programming a wide range of systems from Augmented Reality to Interfaces.
+					</p>
+
+					
+					<!-- Portfolio Second Research Stage-->	
+					<div class='row' style='margin-top:10vw;'>
+						<div class='order-2 order-lg-2 col-lg-6 text-center'>
+							<!-- Code from https://getbootstrap.com/docs/5.3/components/carousel/ -->
+							<div id="portfolioCarousel5" class="carousel slide carousel-dark">
+							<div class="carousel-indicators ">
+								<button type="button" data-bs-target="#portfolioCarousel5" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+								<button type="button" data-bs-target="#portfolioCarousel5" data-bs-slide-to="1" aria-label="Slide 2"></button>
+							</div>
+							<div class="carousel-inner" style='border-radius:4%;'>
+								<div class="carousel-item active">
+								<img src="images/Sensor1.png" class="d-block w-100" alt=''>
+								</div>
+								<div class="carousel-item">
+								<img src="images/Sensor3.png" class="d-block w-100" alt=''>
+								</div>
+							</div>
+							<button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel5" data-bs-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Previous</span>
+							</button>
+							<button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel5" data-bs-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Next</span>
+							</button>
+							</div>
+							<a class='btn btn-primary my-2' role='button' href='https://github.com/JoshDuvy/Sensor-basedHat' style='margin-bottom:1vw;'>
+							<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+								<path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+								<path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+							</svg> 
+						GitHub Repo</a>
 						</div>
-						<div class="carousel-item">
-						  <img src="images/Sensor2.jpg" class="d-block w-100" alt="/images/AR1.jpg">
-						  <div class="carousel-caption d-none d-md-block">
-							<h6>Website</h6>
-							<ul>
-								<li>Mobile/Desktop Web Design</li>
-								<li>Bootstrap 5 Frontend Toolkit</li>
-								<li>Progressive Web App</li>
-							</ul>
-						  </div>
+						<div class='order-1 order-lg-1 col-lg-6'>
+							<h1 class='display-6'>Sensor Based Hat</h1>
+							<div style='text-align:left;' class='row'>
+								<p>The project is an inactivity monitor and alarm system. It tracks user movement and provides a visual alarm when they have been inactive for too long. 
+									</br></br>It does this by combining different sensor data to determine whether a user is walking and whether they have changed room, these link to show whether a user is outside.
+									</br></br>The system was tested and developed in multiple ways by collecting real-world data sets.
+									The system is mainly interacted by a person through the sensors in the system.
+								</p>
+							</div>
+							<a class='btn btn-outline-primary' role='button' h' style='margin-bottom:1vw;'>Python Programming</a>
+							<a class='btn btn-outline-primary' role='button' h' style='margin-bottom:1vw;'>Wearable Development</a>
+							<a class='btn btn-outline-primary' role='button' h' style='margin-bottom:1vw;'>RaspberryPi Developemnt</a>
+
 						</div>
-						<div class="carousel-item">
-						  <img src="images/Sensor3.jpg" class="d-block w-100" alt="/images/AR1.jpg">
-						  <div class="carousel-caption d-none d-md-block">
-							<h6>Second slide label</h6>
-						  </div>
-						</div>
-					  </div>
-					  <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel4" data-bs-slide="prev">
-						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-						<span class="visually-hidden">Previous</span>
-					  </button>
-					  <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel4" data-bs-slide="next">
-						<span class="carousel-control-next-icon" aria-hidden="true"></span>
-						<span class="visually-hidden">Next</span>
-					  </button>
 					</div>
+					<hr>
+
+					<!-- Portfolio Third Research Stage-->	
+					<div class='row' style='margin-top:10vw;'>
+						<div class='order-2 order-lg-1 col-lg-6 text-center'>
+							<!-- Code from https://getbootstrap.com/docs/5.3/components/carousel/ -->
+							<div id="portfolioCarousel6" class="carousel slide carousel-dark">
+							<div class="carousel-indicators ">
+								<button type="button" data-bs-target="#portfolioCarousel6" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+								<button type="button" data-bs-target="#portfolioCarousel6" data-bs-slide-to="1" aria-label="Slide 2"></button>
+							</div>
+							<div class="carousel-inner" style='border-radius:4%;'>
+								<div class="carousel-item active">
+								<img src="images/robot.png" class="d-block w-100" alt=''>
+								</div>
+								<div class="carousel-item">
+								<img src="images/robot.png" class="d-block w-100" alt=''>
+								</div>
+							</div>
+							<button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel6" data-bs-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Previous</span>
+							</button>
+							<button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel6" data-bs-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Next</span>
+							</button>
+							</div>
+							<a class='btn btn-primary my-2' role='button' href='https://github.com/JoshDuvy/smartRobot' style='margin-bottom:1vw;'>
+							<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+								<path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+								<path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+							</svg> 
+						GitHub Repo Link</a>
+						</div>
+						<div class='order-1 order-lg-2 col-lg-6'>
+							<h1 class='display-6'>Robotic AI Assistant</h1>
+							<div style='text-align:left;' class='row'>
+								<p>A PiCar-X AI platform was used to create an emboided AI assistant. The robot moves around and uses an ultrasonic sensor to detect objects.</br></br>
+									 It then tries to search for uses using a computer vision library. If a person is found, the robot then switches to a voice interface and uses Google's Gemini to answer questions.
+								</p>
+							</div>
+							<a class='btn btn-outline-primary' role='button' h' style='margin-bottom:1vw;'>AI API</a>
+							<a class='btn btn-outline-primary' role='button' h' style='margin-bottom:1vw;'>Python Programming</a>
+							<a class='btn btn-outline-primary' role='button' h' style='margin-bottom:1vw;'>Voice Interface</a>
+						</div>
+					</div>
+					<hr>
+				</div>
 			</div>
-		</div> -->
-		
+		</div>
+	
 
 		<div class='bg-secondary-subtle' style='margin:0; padding-bottom:1vw;padding-top:1.3vw;'>
 			<div class='container text-center fw-lighter'>
